@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scène d'arithmépique</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/commun.js"></script>
+        <script src="js/scriptsScenes.js"></script>
+        <script src="js/scene.js"></script>
+        <style>
+            @import url("//code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css");
+            @import url("css/scene.css");
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="etats">
+                <div class="Depart">
+                    <h2>DÉPART</h2>
+                    <button type="button">Démarrer</button>
+                </div>
+
+                <div class="TrDepart">
+                    Prêt?
+                </div>
+
+                <div class="Question">
+                    <div class="gui">
+                        <div class="chrono">
+                            <div class="temps-restant">
+                            </div>
+                        </div>
+
+                        <div class="clavier-numerique">
+                            <button class="reponse" type="button" value="0">0</button><button class="reponse" type="button" value="1">1</button><button class="reponse" type="button" value="2">2</button><button class="reponse" type="button" value="3">3</button><button class="reponse" type="button" value="4">4</button><button class="reponse" type="button" value="5">5</button><button class="reponse" type="button" value="6">6</button><button class="reponse" type="button" value="7">7</button><button class="reponse" type="button" value="8">8</button><button class="reponse" type="button" value="9">9</button><button class="reponse" type="button" value="10">10</button>
+                        </div>
+
+                        <div class="equation">
+                            <span class="question">
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="combat">
+                        <div class="wrap-heros"><div class="heros"></div></div>
+                        <div class="wrap-monstres"><div class="monstres"></div></div>
+                    </div>
+                </div>
+
+                <div class="Bon"> 
+                    <div class="gui">
+                        <div class="equation">
+                            <span class="question">
+                            </span>
+                            =
+                            <span class="reponse">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="combat">
+                        <div class="wrap-heros"><div class="heros"></div></div>
+                        <div class="wrap-monstres"><div class="monstres"></div></div>
+                    </div>
+                </div>
+
+                <div class="Mauvais">
+                    <div class="gui">
+                        <div class="equation">
+                            <span class="question">
+                            </span>
+                            =
+                            <span class="reponse-correcte">
+                            </span>
+
+                            <span class="reponse-donnee">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="combat">
+                        <div class="wrap-heros"><div class="heros"></div></div>
+                        <div class="wrap-monstres"><div class="monstres"></div></div>
+                    </div>
+                </div>
+
+                <div class="ChronoEpuise">
+                    <div class="gui">
+                        <div class="equation">
+                            <span class="question">
+                            </span>
+                            =
+                            <span class="reponse">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="combat">
+                        <div class="wrap-heros"><div class="heros"></div></div>
+                        <div class="wrap-monstres"><div class="monstres"></div></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="Complete">
+                    <div class="gui">
+                        <div class="etoiles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p class="commentaire commentaire-1">Bravo!</p>
+                        <p class="commentaire commentaire-2">Bravo! Essaie encore sans te tromper.</p>
+                        <p class="commentaire commentaire-3">Bravo! Essaie encore en étant plus rapide.</p>
+                        <p><a href="javascript:location.reload()">Recommencer</a></p>
+                        <p><a href="carte.html">Carte</a></p>
+                    </div>
+                </div>
+
+                <div class="Echec">
+                    <div class="gui">
+                        <div class="etoiles">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>Essaie encore!</p>
+                        <p><a href="javascript:location.reload()">Recommencer</a></p>
+                        <p><a href="carte.html">Carte</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sol-1"><div></div></div>
+            <div class="sol-2"><div></div></div>
+            <div class="sol-3"><div></div></div>
+        </div>
+    </body>
+</html>

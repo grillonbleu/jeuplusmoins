@@ -1,0 +1,85 @@
+/* Châteaux */
+
+.est-boss .etats {
+    background-image: url(../img/decors/bg_castle.png);
+    background-repeat: repeat;
+}
+
+.est-boss .sol-1 {
+    background: url("../img/decors/castleCenter.png");
+}
+
+.est-boss .sol-1 > div {
+    background: url("../img/decors/castleMid.png") repeat-x;
+}
+
+/* Monde 1 / plaines */
+#s1-2-3-plus .etats,
+#s1-2-3-moins .etats,
+#s1-2-3-plus-moins .etats {
+    background-image: url("../img/decors/bg_grasslands.png");
+}
+
+/* Monde 2 / foret */
+#s4-5-plus .etats,
+#s4-5-moins .etats,
+#s4-5-plus-moins .etats,
+#s4-5-plus-moins-chrono .etats {
+    background-image: url("../img/decors/bg_shroom.png");
+}
+
+/* Monde 3 / desert */
+#s5-6-plus .etats,
+#s5-6-moins .etats,
+#s5-6-plus-moins .etats,
+#s5-6-plus-moins-chrono .etats {
+    background-image: url("../img/decors/bg_desert.png");
+}
+
+#s5-6-plus .sol-1,
+#s5-6-moins .sol-1,
+#s5-6-plus-moins .sol-1,
+#s5-6-plus-moins-chrono .sol-1 {
+    background: url("../img/decors/sandCenter.png");
+}
+
+#s5-6-plus .sol-1 > div,
+#s5-6-moins .sol-1 > div,
+#s5-6-plus-moins .sol-1 > div,
+#s5-6-plus-moins-chrono .sol-1 > div {
+    background: url("../img/decors/sandMid.png") repeat-x;
+}
+
+
+/* Monde 4 / lac */
+#s6-7-plus .etats,
+#s6-7-moins .etats,
+#s6-7-plus-moins .etats,
+#s6-7-plus-moins-chrono .etats {
+    background-image: url("../img/decors/bg_grasslands.png");
+}
+
+#s6-7-plus .sol-1,
+#s6-7-moins .sol-1,
+#s6-7-plus-moins .sol-1,
+#s6-7-plus-moins-chrono .sol-1 {
+    height: 70px;
+    background: #c0e8ec;
+}
+
+#s6-7-plus .sol-1 > div,
+#s6-7-moins .sol-1 > div,
+#s6-7-plus-moins .sol-1 > div,
+#s6-7-plus-moins-chrono .sol-1 > div {
+    background: url("../img/decors/liquidWaterTop_mid.png") repeat-x;
+}
+
+
+#s6-7-plus .sol-2,
+#s6-7-moins .sol-2,
+#s6-7-plus-moins .sol-2,
+#s6-7-plus-moins-chrono .sol-2 {
+    background: url("../img/decors/liquidWater.png");
+    height: 40%;
+}
+

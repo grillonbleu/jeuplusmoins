@@ -1,0 +1,500 @@
+/* ARAIGNEE */
+
+.combat .wrap-monstres  .monstres > span.araignee { /* bounding box */
+    width: 71px;
+    height: 45px;
+}
+
+.combat .wrap-monstres  .monstres > span.araignee > span.sprite { /* sprite debout */
+    width: 71px; height: 45px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") 0px -326px;
+}
+
+.combat .wrap-monstres  .monstres > span.araignee.battu > span.sprite { /* sprite battu */
+    background-position: -70px -288px; 
+}
+
+.combat .wrap-monstres .monstres > span.araignee.attaque > span.sprite { /* sprite attaque */
+   background-position: 0 -37px;
+   width: 76px; height: 53px;
+   top: -8px;  
+}
+
+@keyframes monstre-araignee-court {
+    0% {background-position: 0 -37px; width: 76px; height: 53px; top: -8px} /* sprite court1 */
+    50% {background-position: 0 -90px; width: 72px; height: 50px; top: -5px} /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.araignee:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.araignee.va-arriere > span.sprite {
+    animation: monstre-araignee-court .3s steps(1) infinite;
+}
+
+
+
+/* ABEILLE */
+
+.combat .wrap-monstres  .monstres > span.abeille { /* bounding box */
+    width: 56px;
+    height: 58px;
+}
+
+.combat .wrap-monstres  .monstres > span.abeille > span.sprite { /* sprite debout */
+    width: 56px; height: 48px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -315px -353px;
+}
+
+.combat .wrap-monstres  .monstres > span.abeille.battu > span.sprite { /* sprite battu */
+    background-position: -315px -305px; 
+}
+
+.combat .wrap-monstres .monstres > span.abeille.attaque > span.sprite { /* sprite attaque */
+   background-position: -140px -23px;
+   width: 61px; height: 42px;
+   top: -6px; left: 3px;  
+}
+
+@keyframes monstre-abeille-court {
+    0% {background-position: -315px -353px; width: 56px; height: 48px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -140px -23px; width: 61px; height: 42px; top: 6px; left: -4px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.abeille:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.abeille.va-arriere > span.sprite {
+    animation: monstre-abeille-court .3s steps(1) infinite;
+}
+
+/* RAT */
+
+.combat .wrap-monstres  .monstres > span.rat { /* bounding box */
+    width: 57px;
+    height: 34px;
+}
+
+.combat .wrap-monstres  .monstres > span.rat > span.sprite { /* sprite debout */
+    width: 57px; height: 34px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -198px -475px;
+}
+
+.combat .wrap-monstres  .monstres > span.rat.battu > span.sprite { /* sprite battu */
+    width: 59px; height: 34px;
+    background-position: -202px -206px;
+}
+
+.combat .wrap-monstres .monstres > span.rat.attaque > span.sprite { /* sprite attaque */
+   background-position: -257px -475px;
+   width: 57px; height: 34px;
+   top: 0; left: 0;
+}
+
+@keyframes monstre-rat-court {
+    0% {background-position: -198px -475px; width: 57px; height: 34px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -257px -475px; width: 57px; height: 34px; top: 0px; left: 0px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.rat:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.rat.va-arriere > span.sprite {
+    animation: monstre-rat-court .3s steps(1) infinite;
+}
+
+/* GRENOUILLE */
+
+.combat .wrap-monstres  .monstres > span.grenouille { /* bounding box */
+    width: 57px;
+    height: 38px;
+}
+
+.combat .wrap-monstres  .monstres > span.grenouille > span.sprite { /* sprite debout */
+    width: 57px; height: 38px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -257px -46px;
+}
+
+.combat .wrap-monstres  .monstres > span.grenouille.battu > span.sprite { /* sprite battu */
+    width: 60px; height: 52px;
+    background-position: -140px -282px;
+    left: -7px;
+}
+
+.combat .wrap-monstres .monstres > span.grenouille.attaque > span.sprite { /* sprite attaque */
+   background-position: -197px -337px;
+   width: 60px; height: 52px;
+   top: 0px; left: -7px;
+}
+
+@keyframes monstre-grenouille-court {
+    0% {background-position: -257px -46px; width: 59px; height: 38px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -197px -337px; width: 60px; height: 52px; top: -18px; left: -7px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.grenouille:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.grenouille.va-arriere > span.sprite {
+    animation: monstre-grenouille-court .3s steps(1) infinite;
+}
+
+/* CHAUVE SOURIS */
+
+.combat .wrap-monstres  .monstres > span.chauve-souris { /* bounding box */
+    width: 67px;
+    height: 55px;
+}
+
+.combat .wrap-monstres  .monstres > span.chauve-souris > span.sprite { /* sprite debout */
+    width: 67px; height: 45px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -73px -236px;
+}
+
+.combat .wrap-monstres  .monstres > span.chauve-souris.battu > span.sprite { /* sprite battu */
+    width: 67px; height: 45px;
+    background-position: -73px -189px;
+    left: 0px;
+}
+
+.combat .wrap-monstres .monstres > span.chauve-souris.attaque > span.sprite { /* sprite attaque */
+    background-position: 0px 0px;
+    width: 86px; height: 37px;
+    top: 9px; left: -11px;
+}
+
+@keyframes monstre-chauve-souris-court {
+    0% {background-position: -73px -236px; width: 67px; height: 45px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: 0px 0px; width: 86px; height: 37px; top: 9px; left: -11px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.chauve-souris:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.chauve-souris.va-arriere > span.sprite {
+    animation: monstre-chauve-souris-court .3s steps(1) infinite;
+}
+
+/* FANTOME */
+
+.combat .wrap-monstres  .monstres > span.fantome { /* bounding box */
+    width: 51px;
+    height: 73px;
+}
+
+.combat .wrap-monstres  .monstres > span.fantome > span.sprite { /* sprite debout */
+    width: 51px; height: 73px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -371px -386px;
+}
+
+.combat .wrap-monstres  .monstres > span.fantome.battu > span.sprite { /* sprite battu */
+    width: 51px; height: 73px;
+    background-position: -478px -277px;
+}
+
+.combat .wrap-monstres .monstres > span.fantome.attaque > span.sprite { /* sprite attaque */
+    background-position: -528px -147px;
+    width: 51px; height: 73px;
+}
+
+@keyframes monstre-fantome-court {
+    0% {background-position: -371px -386px } /* sprite court1 */
+    50% {background-position: -528px -147px } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.fantome:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.fantome.va-arriere > span.sprite {
+    animation: monstre-fantome-court .3s steps(1) infinite;
+}
+
+/* MOUCHE */
+
+.combat .wrap-monstres  .monstres > span.mouche { /* bounding box */
+    width: 65px;
+    height: 49px;
+}
+
+.combat .wrap-monstres  .monstres > span.mouche > span.sprite { /* sprite debout */
+    width: 65px; height: 39px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -71px -333px;
+}
+
+.combat .wrap-monstres  .monstres > span.mouche.battu > span.sprite { /* sprite battu */
+    background-position: -261px -171px;
+    width: 58px; height: 45px;
+}
+
+.combat .wrap-monstres .monstres > span.mouche.attaque > span.sprite { /* sprite attaque */
+    background-position: -262px -114px;
+    width: 57px; height: 45px;
+    top: -6px; left: 5px;
+}
+
+@keyframes monstre-mouche-court {
+    0% {background-position: -71px -333px; width: 65px; height: 39px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -262px -114px; width: 57px; height: 45px; top: -6px; left: 5px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.mouche:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.mouche.va-arriere > span.sprite {
+    animation: monstre-mouche-court .3s steps(1) infinite;
+}
+
+/* POISSON */
+
+.combat .wrap-monstres  .monstres > span.poisson { /* bounding box */
+    width: 60px;
+    height: 45px;
+}
+
+.combat .wrap-monstres  .monstres > span.poisson > span.sprite { /* sprite debout */
+    width: 60px; height: 45px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -201px 0px;
+}
+
+.combat .wrap-monstres  .monstres > span.poisson.battu > span.sprite { /* sprite battu */
+    background-position: -201px -248px;
+    width: 60px; height: 45px;
+}
+
+.combat .wrap-monstres .monstres > span.poisson.attaque > span.sprite { /* sprite attaque */
+    background-position: -261px 0px;
+    width: 56px; height: 45px;
+    top: 0px; left: 0px;
+}
+
+@keyframes monstre-poisson-court {
+    0% {background-position: -201px 0px; width: 60px; height: 45px; top: 0px; left: 0px; } /* sprite court1 */
+    50% {background-position: -261px 0px; width: 56px; height: 45px; top: 0px; left: 0px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.poisson:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.poisson.va-arriere > span.sprite {
+    animation: monstre-poisson-court .3s steps(1) infinite;
+}
+
+/* ESCARGOT */
+
+.combat .wrap-monstres  .monstres > span.escargot { /* bounding box */
+    width: 60px;
+    height: 39px;
+}
+
+.combat .wrap-monstres  .monstres > span.escargot > span.sprite { /* sprite debout */
+    width: 60px; height: 39px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -197px -435px;
+}
+
+.combat .wrap-monstres  .monstres > span.escargot.battu > span.sprite { /* sprite battu */
+    background-position: -528px -406px;
+    width: 43px; height: 35px;
+    left: 17px;
+    top: 0;
+}
+
+.combat .wrap-monstres .monstres > span.escargot.attaque > span.sprite { /* sprite attaque */
+    background-position: -315px -468px;
+    width: 54px; height: 39px;
+    top: 0px; left: 6px;
+}
+
+@keyframes monstre-escargot-court {
+    0% {background-position: -197px -435px; width: 60px; height: 39px; top: 0; left: 0; } /* sprite court1 */
+    50% {background-position: -315px -468px; width: 54px; height: 39px; top: 0px; left: 6px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.escargot:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.escargot.va-arriere > span.sprite {
+    animation: monstre-escargot-court .3s steps(1) infinite;
+}
+
+/* COCCINELLE */
+
+.combat .wrap-monstres  .monstres > span.coccinelle { /* bounding box */
+    width: 58px;
+    height: 34px;
+}
+
+.combat .wrap-monstres  .monstres > span.coccinelle > span.sprite { /* sprite debout */
+    width: 58px; height: 34px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -141px -248px;
+}
+
+.combat .wrap-monstres  .monstres > span.coccinelle.battu > span.sprite { /* sprite battu */
+    background-position: -201px -293px;
+    width: 59px; height: 42px;
+    left: 0;
+    top: -8px;
+}
+
+.combat .wrap-monstres .monstres > span.coccinelle.attaque > span.sprite { /* sprite attaque */
+    background-position: -135px -99px;
+    width: 61px; height: 34px;
+    top: 0px; left: 0px;
+}
+
+@keyframes monstre-coccinelle-court {
+    0% {background-position: -141px -248px; width: 58px; height: 34px; top: 0; left: 0; } /* sprite court1 */
+    50% {background-position: -135px -99px; width: 61px; height: 34px; top: 0px; left: 0px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.coccinelle:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.coccinelle.va-arriere > span.sprite {
+    animation: monstre-coccinelle-court .3s steps(1) infinite;
+}
+
+/* SERPENT */
+
+.combat .wrap-monstres  .monstres > span.serpent { /* bounding box */
+    width: 63px;
+    height: 23px;
+}
+
+.combat .wrap-monstres  .monstres > span.serpent > span.sprite { /* sprite debout */
+    width: 63px; height: 23px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -88px 0px;
+}
+
+.combat .wrap-monstres  .monstres > span.serpent.battu > span.sprite { /* sprite battu */
+    background-position: -72px -99px;
+}
+
+.combat .wrap-monstres .monstres > span.serpent.attaque > span.sprite { /* sprite attaque */
+    background-position: -134px -434px;
+}
+
+@keyframes monstre-serpent-court {
+    0% {background-position: -88px 0px } /* sprite court1 */
+    50% {background-position: -134px -434px } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.serpent:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.serpent.va-arriere > span.sprite {
+    animation: monstre-serpent-court .3s steps(1) infinite;
+}
+
+/* ENGRENAGE */
+
+.combat .wrap-monstres  .monstres > span.engrenage { /* bounding box */
+    width: 63px;
+    height: 62px;
+}
+
+.combat .wrap-monstres  .monstres > span.engrenage > span.sprite { /* sprite debout */
+    width: 63px; height: 62px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -134px -372px;
+}
+
+.combat .wrap-monstres  .monstres > span.engrenage.battu > span.sprite { /* sprite battu */
+    background-position: -77px -37px;
+    width: 63px;
+}
+
+.combat .wrap-monstres .monstres > span.engrenage.attaque > span.sprite { /* sprite attaque */
+    background-position: -196px -65px;
+    width: 61px; height: 60px;
+    top: 1px; left: 1px;
+}
+
+@keyframes monstre-engrenage-court {
+    0% { background-position: -134px -372px; width: 63px; height: 62px; top: 0; left: 0; } /* sprite court1 */
+    50% { background-position: -196px -65px; width: 61px; height: 60px; top: 1px; left: 1px } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.engrenage:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.engrenage.va-arriere > span.sprite {
+    animation: monstre-engrenage-court .3s steps(1) infinite;
+}
+
+/* SLIME BLEU */
+
+.combat .wrap-monstres  .monstres > span.slimeBleu { /* bounding box */
+    width: 57px;
+    height: 30px;
+}
+
+.combat .wrap-monstres  .monstres > span.slimeBleu > span.sprite { /* sprite debout */
+    width: 57px; height: 30px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -258px -335px;
+}
+
+.combat .wrap-monstres  .monstres > span.slimeBleu.battu > span.sprite { /* sprite battu */
+    width: 48px; height: 34px;
+    background-position: -374px 0px;
+    left: 0px;
+}
+
+.combat .wrap-monstres .monstres > span.slimeBleu.attaque > span.sprite { /* sprite attaque */
+   background-position: -528px -278px;
+   width: 49px; height: 34px;
+   top: 0px; left: 0px;
+}
+
+@keyframes monstre-slimeBleu-court {
+    0% {background-position: -258px -335px; width: 57px; height: 30px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -528px -278px; width: 49px; height: 34px; top: -4px; left: 0px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.slimeBleu:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.slimeBleu.va-arriere > span.sprite {
+    animation: monstre-slimeBleu-court .3s steps(1) infinite;
+}
+
+/* SLIME ROSE */
+
+.combat .wrap-monstres  .monstres > span.slimeRose { /* bounding box */
+    width: 57px;
+    height: 30px;
+}
+
+.combat .wrap-monstres  .monstres > span.slimeRose > span.sprite { /* sprite debout */
+    width: 57px; height: 30px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -257px -424px;
+}
+
+.combat .wrap-monstres  .monstres > span.slimeRose.battu > span.sprite { /* sprite battu */
+    width: 48px; height: 34px;
+    background-position: -528px -312px;
+    left: 0px;
+}
+
+.combat .wrap-monstres .monstres > span.slimeRose.attaque > span.sprite { /* sprite attaque */
+   background-position: -526px -456px;
+   width: 49px; height: 34px;
+   top: 0px; left: 0px;
+}
+
+@keyframes monstre-slimeRose-court {
+    0% {background-position: -257px -424px; width: 57px; height: 30px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -526px -456px; width: 49px; height: 34px; top: -4px; left: 0px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.slimeRose:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.slimeRose.va-arriere > span.sprite {
+    animation: monstre-slimeRose-court .3s steps(1) infinite;
+}
+
+/* SLIME VERT */
+
+.combat .wrap-monstres  .monstres > span.slimeVert { /* bounding box */
+    width: 57px;
+    height: 30px;
+}
+
+.combat .wrap-monstres  .monstres > span.slimeVert > span.sprite { /* sprite debout */
+    width: 57px; height: 30px;
+    top: 0; left: 0;
+    background: url("../img/sprites-enemies.png") -257px -84px;
+}
+
+.combat .wrap-monstres  .monstres > span.slimeVert.battu > span.sprite { /* sprite battu */
+    width: 48px; height: 34px;
+    background-position: -425px -147px;
+    left: 0px;
+}
+
+.combat .wrap-monstres .monstres > span.slimeVert.attaque > span.sprite { /* sprite attaque */
+   background-position: -140px -65px;
+   width: 49px; height: 34px;
+   top: 0px; left: 0px;
+}
+
+@keyframes monstre-slimeVert-court {
+    0% {background-position: -257px -84px; width: 57px; height: 30px; top: 0px;  left: 0} /* sprite court1 */
+    50% {background-position: -140px -65px; width: 49px; height: 34px; top: -4px; left: 0px; } /* sprite court2 */
+}
+.combat .wrap-monstres .monstres.avancent span.slimeVert:not(.va-arriere) span.sprite,
+.combat .wrap-monstres .monstres > span.slimeVert.va-arriere > span.sprite {
+    animation: monstre-slimeVert-court .3s steps(1) infinite;
+}
+

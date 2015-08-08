@@ -1,0 +1,357 @@
+@import "scene-monstres.css";
+@import "scene-heros.css";
+@import "scene-decors.css";
+
+/* Grandes sections */
+
+html, body {
+    padding: 0;
+    margin: auto;
+    height: 100%;
+}
+
+.wrap {
+    background: #d0f4f7;
+    height: 100%;
+    display: table;
+    width: 100%;
+    overflow: hidden;
+}
+
+.etats {
+    display: table-row;
+    height: 60%;
+    position: relative;
+    
+    background-color: transparent;
+    background-position: left center;
+    background-repeat: repeat-x;
+}
+
+.etats > div, .sol-1 > div, .sol-2 > div, .sol-3 > div {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.etats > .inactif {
+    display: none;
+}
+
+
+.sol-1 {
+    background: url("../img/decors/grassCenter.png");
+    height: 40%;
+    display: table-row;
+}
+
+.sol-2, .sol-3 {
+    height: 0;
+    display: table-row;
+}
+
+.sol-1 > div {
+    background: url("../img/decors/grassMid.png");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+
+/* GUI */
+
+.gui {
+    position: relative;
+    height: 100%;
+    max-height: 400px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gui .equation {
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: -160px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    border: 10px solid #94aeb0;
+    border-radius: 40px;
+    background: white;
+    color: #94aeb0;
+    font-weight: bold;
+    font-size: 32pt;
+    font-family: sans-serif;
+}
+
+.gui .equation .reponse {
+    color: black;
+}
+
+.gui .equation .reponse-correcte {
+    color: black;
+}
+
+.gui .equation .reponse-donnee {
+    color: #AAA;
+    opacity: 0;
+}
+
+.gui .equation .reponse-donnee.anim {
+   animation: equation-reponse-donnee 1s linear 1;
+   animation-fill-mode: none;
+}
+
+.gui .etoiles span {
+    display: inline-block;
+    background: transparent url("../img/scene_etoile_perdue.png") repeat scroll 0% 0%;
+    width: 100px;
+    height: 100px;
+}
+
+.gui .etoiles span.gagnee {
+    background-image: url("../img/scene_etoile_gagnee.png");
+}
+/* DÉPART */
+
+.etats > .Depart {
+    text-align: center;
+}
+
+/* TRANSITION DÉPART */
+
+.etats > .TrDepart {
+    text-align: center;
+}
+
+/* Échec */
+
+.etats > .Echec {
+    text-align: center;
+}
+
+/* Réussite */
+
+.etats > .Complete {
+    text-align: center;
+}
+
+
+/* Déplacement + opacité, héro battu */
+@keyframes equation-reponse-donnee {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+.gui .clavier-numerique {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 150px;
+}
+
+.gui .clavier-numerique button.reponse {
+    width: 40px;
+    height: 40px;
+    font-size: 16pt;
+    margin: 4px;
+}
+
+.gui .chrono {
+    width: 100px;
+    margin-left: auto;
+    border: 10px solid #94AEB0;
+    border-radius: 40px;
+    background: white;
+}
+
+.gui .chrono .temps-restant {
+    border-radius: 40px;
+    background: rgb(111, 196, 169) none repeat scroll 0% 0%;
+    height: 1.5em;
+}
+
+.gui .chrono .temps-restant.urgent {
+    color: white;
+    font-family: sans-serif;
+    font-size: 12pt;
+    line-height: 1.5; 
+    background-color: #ff9d29;
+}
+.gui .chrono .temps-restant.urgent::before {
+    content: " !";
+}
+
+/* Combat */
+
+.flip-h {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.combat {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    position: absolute;
+    bottom: 0;
+}
+
+/* heros */
+
+.combat .wrap-heros {
+    display: table-cell;
+    position: relative;
+    
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+    vertical-align: bottom;
+}
+
+.combat .wrap-heros .heros {
+    white-space: nowrap;
+    display: inline-block; /* contour serré autour des héros */
+    position: relative;
+}
+
+.combat .wrap-heros .heros > span { /* bounding box */
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: bottom;
+    z-index: 10;
+}
+
+.combat .wrap-heros .heros > span > span.sprite { /* sprite */
+    display: block;
+    position: relative;
+}
+
+/* Déplacement heros attaque */
+@keyframes hero-attaque {
+    0% {bottom: 0px}
+    50% {bottom: 100px}
+    100% {bottom: 0px}
+}
+
+.combat .wrap-heros .heros > span.attaque {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: hero-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
+}
+
+/* Déplacement + opacité, héro battu */
+@keyframes hero-battu {
+    0% {opacity: 1; bottom: 0}
+    100% {opacity: 0; bottom: -100px}
+}
+.combat .wrap-heros  .heros > span.battu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: hero-battu 1s linear 1;
+}
+
+
+/* Déplacement heros va à l'arrière */
+@keyframes hero-va-arriere {
+    0% {right: 0%}
+    100% {right: 100%}
+}
+.combat .wrap-heros .heros > span.va-arriere {
+    position: absolute;
+    bottom: 0;
+    animation: hero-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
+}
+
+/* Le contenant de héros, lorsque que le héros de l'avant attaque/saute */
+.combat .wrap-heros .heros.fetent {}
+
+@keyframes heros-avancent {
+    100% {padding-right: 0}
+}
+.combat .wrap-heros .heros.avancent {
+    animation: heros-avancent 1s linear 1;
+}
+
+
+
+
+.combat .wrap-monstres {
+    display: table-cell;
+    position: relative;
+    
+    width: 50%;
+    padding-left: 30px;
+    vertical-align: bottom;
+}
+
+.combat .wrap-monstres .monstres {
+    white-space: nowrap;
+    display: inline-block; /* contour serré autour des monstres */
+    position: relative;
+}
+
+.combat .wrap-monstres  .monstres > span { /* bounding box */
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: bottom;
+    z-index: 10;
+}
+
+.combat .wrap-monstres  .monstres > span > span.sprite { /* sprite debout */
+    display: block;
+    position: relative;
+}
+
+/* Le contenant de monstres, lorsque qu'un monstre est battu */
+.combat .wrap-monstres .monstres.pleurent {}
+
+/* Déplacement + opacité */
+@keyframes monstre-battu {
+    0% {opacity: 1; bottom: 0}
+    100% {opacity: 0; bottom: -100px}
+}
+.combat .wrap-monstres  .monstres > span.battu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: monstre-battu 1s linear 1;
+}
+
+/* Déplacement monstre attaque */
+@keyframes monstre-attaque {
+    0% {bottom: 0px}
+    50% {bottom: 100px}
+    100% {bottom: 0px}
+}
+
+.combat .wrap-monstres .monstres > span.attaque {
+    position: absolute;
+    left: 0;
+    animation: monstre-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
+}
+
+@keyframes monstres-avancent {
+    100% {padding-left: 0}
+}
+.combat .wrap-monstres .monstres.avancent {
+    animation: monstres-avancent 1s linear 1;
+}
+
+/* Déplacement monstre va à l'arrière */
+@keyframes monstre-va-arriere {
+    0% {left: 0%}
+    100% {left: 100%}
+}
+.combat .wrap-monstres .monstres > span.va-arriere {
+    position: absolute;
+    bottom: 0;
+    animation: monstre-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
+}

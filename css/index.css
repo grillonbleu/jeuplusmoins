@@ -1,0 +1,52 @@
+body {
+    background: #d0f4f7;
+    color: #94aeb0;
+}
+
+.wrap {
+    width: 30em;
+    margin: 0 auto;
+    /**/
+}
+
+ul.joueurs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.joueurs li {
+    margin: 1em 0;
+    
+    background: white;
+    padding: 1em 2em;
+    border: 10px solid #94aeb0;
+    
+    border-radius: 40px;
+    
+    font-family: sans-serif;
+    position: relative;
+}
+
+ul.joueurs li .nom {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul.joueurs li .ctrl {
+    text-align: right;
+}
+
+ul.joueurs li .etoiles {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding-right: 24px;
+    background: url("../img/icones-carte/icone_etoile_gagnee.png") no-repeat 100% 0;
+    height: 24px;
+    line-height: 24px;
+}
+
+ul.joueurs li .scene {
+    display: none;
+}

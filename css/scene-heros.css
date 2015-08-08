@@ -1,0 +1,167 @@
+/* VERT */
+
+.combat .wrap-heros .heros > span.vert { /* bounding box */
+    width: 66px;
+    height: 92px;
+}
+
+.combat .wrap-heros .heros > span.vert > span.sprite { /* debout */
+    top: 0; left: 0;
+    width: 66px; height: 92px;
+    background: url("../img/sprites-heros/alienGreen.png") -69px -379px;
+}
+
+/* Animation heros court (aucune direction particulière) */
+@keyframes hero-vert-court {
+    0% {background-position: 0 0; left: 0; width: 69px} /* court1 */
+    50% {background-position: -69px -193px; left: 0} /* court2 */
+}
+
+.combat .wrap-heros .heros > span.vert.attaque > span.sprite { /* attaque */
+    background-position: -69px -286px;    
+}
+
+.combat .wrap-heros  .heros > span.vert.battu > span.sprite { /* battu */
+    background-position: 0px -288px; 
+    height: 92px; width: 69px;
+}
+
+.combat .wrap-heros .heros > span.vert.va-arriere > span.sprite,
+.combat .wrap-heros .heros.avancent span.vert:not(.va-arriere) span.sprite { /* court */
+    animation: hero-vert-court .3s steps(1) infinite;
+}
+
+/* BEIGE */
+
+.combat .wrap-heros .heros > span.beige { /* bounding box */
+    width: 66px;
+    height: 92px;
+}
+
+.combat .wrap-heros .heros > span.beige > span.sprite { /* debout */
+    top: 0; left: 0;
+    width: 66px; height: 92px;
+    background: url("../img/sprites-heros/alienBeige.png") -67px -294px;
+}
+
+/* Animation heros court (aucune direction particulière) */
+@keyframes hero-beige-court {
+    0% {background-position: 0 -100px; width: 69px; height: 93px; top: -2px; left: -1px} /* court1 */
+    50% {background-position: 0 -294px; width: 67px; height: 93px; top: -1px; left: 0} /* court2 */
+}
+
+.combat .wrap-heros .heros > span.beige.attaque > span.sprite { /* attaque */
+    background-position: 0px 0px;    
+    width: 69px; height: 100px;
+    top: -8px;
+}
+
+.combat .wrap-heros  .heros > span.beige.battu > span.sprite { /* battu */
+    background-position: 0px -387px; 
+    height: 92px; width: 66px;
+}
+
+.combat .wrap-heros .heros > span.beige.va-arriere > span.sprite,
+.combat .wrap-heros .heros.avancent span.beige:not(.va-arriere) span.sprite { /* court */
+    animation: hero-beige-court .3s steps(1) infinite;
+}
+
+/* ROSE */
+
+.combat .wrap-heros .heros > span.rose { /* bounding box */
+    width: 66px;
+    height: 92px;
+}
+
+.combat .wrap-heros .heros > span.rose > span.sprite { /* debout */
+    top: 0; left: 0;
+    width: 66px; height: 92px;
+    background: url("../img/sprites-heros/alienPink.png") -69px -379px;
+}
+
+/* Animation heros court (aucune direction particulière) */
+@keyframes hero-rose-court {
+    0% {background-position: 0 0; left: 0; width: 69px} /* court1 */
+    50% {background-position: -69px -193px; left: 0} /* court2 */
+}
+
+.combat .wrap-heros .heros > span.rose.attaque > span.sprite { /* attaque */
+    background-position: -69px -286px;    
+}
+
+.combat .wrap-heros  .heros > span.rose.battu > span.sprite { /* battu */
+    background-position: 0px -288px; 
+    height: 92px; width: 69px;
+}
+
+.combat .wrap-heros .heros > span.rose.va-arriere > span.sprite,
+.combat .wrap-heros .heros.avancent span.rose:not(.va-arriere) span.sprite { /* court */
+    animation: hero-rose-court .3s steps(1) infinite;
+}
+
+/* JAUNE */
+
+.combat .wrap-heros .heros > span.jaune { /* bounding box */
+    width: 65px;
+    height: 82px;
+}
+
+.combat .wrap-heros .heros > span.jaune > span.sprite { /* debout */
+    top: 0; left: 0;
+    width: 65px; height: 82px;
+    background: url("../img/sprites-heros/alienYellow.png") -68px -422px;
+}
+
+/* Animation heros court (aucune direction particulière) */
+@keyframes hero-jaune-court {
+    0% {background-position: 0 0; left: -4px; top: -4px; width: 69px; height: 86px} /* court1 */
+    50% {background-position: 0 -339px; left: -3px; top: -1px; width: 68px; height: 83px} /* court2 */}
+
+.combat .wrap-heros .heros > span.jaune.attaque > span.sprite { /* attaque */
+    background-position: -68px -339px; 
+    width: 67px; height: 83px;
+}
+
+.combat .wrap-heros  .heros > span.jaune.battu > span.sprite { /* battu */
+    background-position: 0px -258px; 
+    height: 81px; width: 67px;
+}
+
+.combat .wrap-heros .heros > span.jaune.va-arriere > span.sprite,
+.combat .wrap-heros .heros.avancent span.jaune:not(.va-arriere) span.sprite { /* court */
+    animation: hero-jaune-court .3s steps(1) infinite;
+}
+
+/* BLEU */
+
+.combat .wrap-heros .heros > span.bleu { /* bounding box */
+    width: 66px;
+    height: 92px;
+}
+
+.combat .wrap-heros .heros > span.bleu > span.sprite { /* debout */
+    top: 0; left: 0;
+    width: 66px; height: 92px;
+    background: url("../img/sprites-heros/alienBlue.png") -67px -378px;
+}
+
+/* Animation heros court (aucune direction particulière) */
+@keyframes hero-bleu-court {
+    0% {background-position: 0 -356px; left: 0; width: 67px} /* court1 */
+    50% {background-position: -67px -285px; left: 0} /* court2 */
+}
+
+.combat .wrap-heros .heros > span.bleu.attaque > span.sprite { /* attaque */
+    background-position: -67px -191px; 
+    height: 94px;    
+}
+
+.combat .wrap-heros  .heros > span.bleu.battu > span.sprite { /* battu */
+    background-position: 0px -192px; 
+    height: 92px;
+}
+
+.combat .wrap-heros .heros > span.bleu.va-arriere > span.sprite,
+.combat .wrap-heros .heros.avancent span.bleu:not(.va-arriere) span.sprite { /* court */
+    animation: hero-bleu-court .3s steps(1) infinite;
+}
