@@ -1,6 +1,6 @@
 /* Châteaux */
 
-.est-boss .etats {
+.est-boss .wrap {
     background-image: url(../img/decors/bg_castle.png);
     background-repeat: repeat;
 }
@@ -14,27 +14,51 @@
 }
 
 /* Monde 1 / plaines */
-#s1-2-3-plus .etats,
-#s1-2-3-moins .etats,
-#s1-2-3-plus-moins .etats {
+#s1-2-3-plus .wrap,
+#s1-2-3-moins .wrap,
+#s1-2-3-plus-moins .wrap {
     background-image: url("../img/decors/bg_grasslands.png");
 }
 
+
+#s1-2-3-plus .decor,
+#s1-2-3-moins .decor,
+#s1-2-3-plus-moins .decor {
+    background: url(../img/decors/decor_plaine.png);    
+}
+
+
 /* Monde 2 / foret */
-#s4-5-plus .etats,
-#s4-5-moins .etats,
-#s4-5-plus-moins .etats,
-#s4-5-plus-moins-chrono .etats {
+#s4-5-plus .wrap,
+#s4-5-moins .wrap,
+#s4-5-plus-moins .wrap,
+#s4-5-plus-moins-chrono .wrap {
+    background-color: #7ab71e;
     background-image: url("../img/decors/bg_shroom.png");
 }
 
+#s4-5-plus .decor,
+#s4-5-moins .decor,
+#s4-5-plus-moins .decor,
+#s4-5-plus-moins-chrono .decor {
+    background: url(../img/decors/decor-foret.png);    
+}
+
 /* Monde 3 / desert */
-#s5-6-plus .etats,
-#s5-6-moins .etats,
-#s5-6-plus-moins .etats,
-#s5-6-plus-moins-chrono .etats {
+#s5-6-plus .wrap,
+#s5-6-moins .wrap,
+#s5-6-plus-moins .wrap,
+#s5-6-plus-moins-chrono .wrap {
     background-image: url("../img/decors/bg_desert.png");
 }
+
+#s5-6-plus .decor,
+#s5-6-moins .decor,
+#s5-6-plus-moins .decor,
+#s5-6-plus-moins-chrono .decor {
+    background: url(../img/decors/decor-desert.png);    
+}
+
 
 #s5-6-plus .sol-1,
 #s5-6-moins .sol-1,
@@ -52,10 +76,10 @@
 
 
 /* Monde 4 / lac */
-#s6-7-plus .etats,
-#s6-7-moins .etats,
-#s6-7-plus-moins .etats,
-#s6-7-plus-moins-chrono .etats {
+#s6-7-plus .wrap,
+#s6-7-moins .wrap,
+#s6-7-plus-moins .wrap,
+#s6-7-plus-moins-chrono .wrap {
     background-image: url("../img/decors/bg_grasslands.png");
 }
 
@@ -83,3 +107,18 @@
     height: 40%;
 }
 
+/* Monde 5 / ville */
+#s7-8-plus .wrap,
+#s7-8-moins .wrap,
+#s7-8-plus-moins .wrap,
+#s7-8-plus-moins-chrono .wrap {
+    background-image: url("../img/decors/bg_grasslands.png");
+    
+}
+
+#s7-8-plus .decor,
+#s7-8-moins .decor,
+#s7-8-plus-moins .decor,
+#s7-8-plus-moins-chrono .decor {
+    background: url(../img/decors/decor_ville.png);    
+}

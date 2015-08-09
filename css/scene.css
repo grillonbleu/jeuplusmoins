@@ -11,21 +11,30 @@ html, body {
 }
 
 .wrap {
-    background: #d0f4f7;
+    background-color: #d0f4f7;
     height: 100%;
     display: table;
     width: 100%;
     overflow: hidden;
+    background-position: left 80%;
+    background-repeat: repeat-x;
+}
+
+.decor {
+    z-index: 10;
+    height: 490px;
+    position: absolute;
+    bottom: 20%;
+    width: 840px;
+    left: 50%;
+    margin-left: -420px;
 }
 
 .etats {
+    z-index: 20;
     display: table-row;
-    height: 60%;
+    height: 80%;
     position: relative;
-    
-    background-color: transparent;
-    background-position: left center;
-    background-repeat: repeat-x;
 }
 
 .etats > div, .sol-1 > div, .sol-2 > div, .sol-3 > div {
@@ -41,7 +50,7 @@ html, body {
 
 .sol-1 {
     background: url("../img/decors/grassCenter.png");
-    height: 40%;
+    height: 20%;
     display: table-row;
 }
 
