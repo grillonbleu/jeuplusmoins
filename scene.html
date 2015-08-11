@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.min.js"></script>
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script src="js/commun.js"></script>
         <script src="js/scriptsScenes.js"></script>
@@ -19,8 +20,18 @@
             <div class="decor"></div>
             <div class="etats">
                 <div class="Depart">
-                    <h2>DÉPART</h2>
-                    <button type="button">Démarrer</button>
+                    <div class='info'>
+                        <p>Des monstres s'approchent!</p>
+                        
+                        <table class='resume-scene'>
+                            <tr class='modele-scene'>
+                                <td class='cell-monstre'><span class='op'></span></td>
+                                <td class='cell-nb'></td>
+                            </tr>
+                        </table>
+                        
+                        <button type="button">Démarrer</button>
+                    </div>
                 </div>
 
                 <div class="TrDepart">
@@ -109,7 +120,7 @@
 
 
                 <div class="Complete">
-                    <div class="gui">
+                    <div class="info">
                         <div class="etoiles">
                             <span></span>
                             <span></span>
@@ -118,8 +129,7 @@
                         <p class="commentaire commentaire-1">Bravo!</p>
                         <p class="commentaire commentaire-2">Bravo! Essaie encore sans te tromper.</p>
                         <p class="commentaire commentaire-3">Bravo! Essaie encore en étant plus rapide.</p>
-                        <p><a href="javascript:location.reload()">Recommencer</a></p>
-                        <p><a href="carte.html">Carte</a></p>
+                        <p><a href="javascript:location.reload()" class="bouton">Recommencer</a> <a href="carte.html" class="bouton">Revenir à la carte</a></p>
                     </div>
                 </div>
 
@@ -131,14 +141,14 @@
                             <span></span>
                         </div>
                         <p>Essaie encore!</p>
-                        <p><a href="javascript:location.reload()">Recommencer</a></p>
-                        <p><a href="carte.html">Carte</a></p>
+                        <p><a href="javascript:location.reload()" class="bouton">Recommencer</a> <a href="carte.html" class="bouton">Revenir à la carte</a></p>
+                        <p></p>
                     </div>
                 </div>
 
             </div>
 
-            <div class="sol-1"><div></div></div>
+            <div class="sol-1"><div><a class='carte bouton' href='carte.html'>Revenir à la carte</a></div></div>
             <div class="sol-2"><div></div></div>
             <div class="sol-3"><div></div></div>
         </div>

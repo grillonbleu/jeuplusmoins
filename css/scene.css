@@ -47,11 +47,63 @@ html, body {
     display: none;
 }
 
+.etats .info {
+    background: white;
+    position: absolute;
+    width: 400px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;
+ 
+    color: #94aeb0;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: sans-serif;
+    border-radius: 40px;
+    padding: 1em;
+}
+
+.etats .info .resume-scene {
+    margin: 0 auto;
+}
+
+.etats .info .resume-scene .cell-monstre {
+    background: #D0F4F7;
+    padding: 5px 3px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cell-monstre .op {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
 
 .sol-1 {
     background: url("../img/decors/grassCenter.png");
     height: 20%;
     display: table-row;
+}
+
+.sol-1 a.carte {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+a.bouton {
+    background: #EEE;
+    padding: 2px 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #555;
+    font-size: 12pt;
 }
 
 .sol-2, .sol-3 {
@@ -112,14 +164,14 @@ html, body {
    animation-fill-mode: none;
 }
 
-.gui .etoiles span {
+.info .etoiles span {
     display: inline-block;
     background: transparent url("../img/scene_etoile_perdue.png") repeat scroll 0% 0%;
     width: 100px;
     height: 100px;
 }
 
-.gui .etoiles span.gagnee {
+.info .etoiles span.gagnee {
     background-image: url("../img/scene_etoile_gagnee.png");
 }
 /* DÉPART */
@@ -307,14 +359,16 @@ html, body {
     position: relative;
 }
 
-.combat .wrap-monstres  .monstres > span { /* bounding box */
+.combat .wrap-monstres  .monstres > span,
+.cell-monstre > span { /* bounding box */
     display: inline-block;
     padding: 0 5px;
     vertical-align: bottom;
     z-index: 10;
 }
 
-.combat .wrap-monstres  .monstres > span > span.sprite { /* sprite debout */
+.combat .wrap-monstres  .monstres > span > span.sprite,
+.cell-monstre > span > span { /* sprite debout */
     display: block;
     position: relative;
 }

@@ -107,6 +107,14 @@
     height: 40%;
 }
 
+#s6-7-plus .decor,
+#s6-7-moins .decor,
+#s6-7-plus-moins .decor,
+#s6-7-plus-moins-chrono .decor {
+    background: url(../img/decors/decor-lac.png);    
+}
+
+
 /* Monde 5 / ville */
 #s7-8-plus .wrap,
 #s7-8-moins .wrap,

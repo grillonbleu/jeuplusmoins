@@ -1,12 +1,12 @@
 //jQuery.QueryString : accéder aux arguments GET de la page
 (function($) {
     $.QueryString = (function(a) {
-        if (a == "") return {};
+        if (a === "") return {};
         var b = {};
         for (var i = 0; i < a.length; ++i)
         {
             var p=a[i].split('=');
-            if (p.length != 2) continue;
+            if (p.length !== 2) continue;
             b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
         }
         return b;
@@ -18,16 +18,16 @@ window.arithmepique.animEnd = "animationend webkitAnimationEnd oAnimationEnd MSA
 
 
 
-/**
- * Evaluateur simple d'addition et de soustractions exprimées dans une chaine.
- * 
- * @param {string} chaine_operation "1 + 2", "3 - 1", etc.
- * 
- * @returns {Number|null} Résultat de l'opération ou null, sur échec d'évaluation.
- */
 (function() {
     var regexp = /^[0-9]+\s[\+-]\s[0-9]+$/;
     
+    /**
+     * Evaluateur simple d'addition et de soustractions exprimées dans une chaine.
+     * 
+     * @param {string} chaine_operation "1 + 2", "3 - 1", etc.
+     * 
+     * @returns {Number|null} Résultat de l'opération ou null, sur échec d'évaluation.
+     */
     window.arithmepique.calc = function(chaine_operation) {
         if(chaine_operation.match(regexp)) {
             return eval(chaine_operation);
@@ -68,7 +68,7 @@ arithmepique.shuffle = function(array) {
     }
 
     return array;
-}
+};
 
 
 arithmepique.Scenes = function() {};

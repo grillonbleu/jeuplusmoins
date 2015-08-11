@@ -13,6 +13,34 @@ arithmepique.scene.etats.Depart = function(scene) {
     jQuery(".Depart button").on("click.arithmepique", function() {
         that.surDemarrage();
     });
+    
+    var operations = this.scene.script.operations;
+    var nb_operations = {};
+    for(var ii = 0; ii < operations.length; ++ii) {
+        var operateur = operations[ii].split(" ")[1];
+        if(!(operateur in nb_operations)) {
+            nb_operations[operateur] = 1;
+        } else {
+            ++nb_operations[operateur];
+        }
+    }
+    
+    var tableau_resume = jQuery(".Depart .resume-scene");
+    var modele_rangee = tableau_resume.find("tr.modele-scene").removeClass("modele-scene").remove();
+    
+    for(var operateur in this.scene.script.monstres) {
+        if(!(operateur in nb_operations)) continue;
+        var nom_monstre = this.scene.script.monstres[operateur];
+
+        var rangee = modele_rangee.clone();
+
+        rangee
+            .find(".cell-monstre").append(sprintf('<span class="%s"><span class="sprite"></span></span>', nom_monstre))
+            .find(".op").text(operateur).end().end()
+            .find(".cell-op").text(operateur).end()
+            .find(".cell-nb").text(nb_operations[operateur]).end()
+            .appendTo(tableau_resume);
+    }
 };
 arithmepique.scene.etats.Depart.prototype = {
     surDemarrage: function() {

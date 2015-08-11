@@ -1,11 +1,11 @@
 /* ARAIGNEE */
 
-.combat .wrap-monstres  .monstres > span.araignee { /* bounding box */
+span.araignee { /* bounding box */
     width: 71px;
     height: 45px;
 }
 
-.combat .wrap-monstres  .monstres > span.araignee > span.sprite { /* sprite debout */
+span.araignee > span.sprite { /* sprite debout */
     width: 71px; height: 45px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") 0px -326px;
@@ -34,12 +34,12 @@
 
 /* ABEILLE */
 
-.combat .wrap-monstres  .monstres > span.abeille { /* bounding box */
+span.abeille { /* bounding box */
     width: 56px;
     height: 58px;
 }
 
-.combat .wrap-monstres  .monstres > span.abeille > span.sprite { /* sprite debout */
+span.abeille > span.sprite { /* sprite debout */
     width: 56px; height: 48px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -315px -353px;
@@ -66,12 +66,12 @@
 
 /* RAT */
 
-.combat .wrap-monstres  .monstres > span.rat { /* bounding box */
+span.rat { /* bounding box */
     width: 57px;
     height: 34px;
 }
 
-.combat .wrap-monstres  .monstres > span.rat > span.sprite { /* sprite debout */
+span.rat > span.sprite { /* sprite debout */
     width: 57px; height: 34px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -198px -475px;
@@ -99,12 +99,12 @@
 
 /* GRENOUILLE */
 
-.combat .wrap-monstres  .monstres > span.grenouille { /* bounding box */
+span.grenouille { /* bounding box */
     width: 57px;
     height: 38px;
 }
 
-.combat .wrap-monstres  .monstres > span.grenouille > span.sprite { /* sprite debout */
+span.grenouille > span.sprite { /* sprite debout */
     width: 57px; height: 38px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -257px -46px;
@@ -133,12 +133,12 @@
 
 /* CHAUVE SOURIS */
 
-.combat .wrap-monstres  .monstres > span.chauve-souris { /* bounding box */
+span.chauve-souris { /* bounding box */
     width: 67px;
     height: 55px;
 }
 
-.combat .wrap-monstres  .monstres > span.chauve-souris > span.sprite { /* sprite debout */
+span.chauve-souris > span.sprite { /* sprite debout */
     width: 67px; height: 45px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -73px -236px;
@@ -167,12 +167,12 @@
 
 /* FANTOME */
 
-.combat .wrap-monstres  .monstres > span.fantome { /* bounding box */
+span.fantome { /* bounding box */
     width: 51px;
     height: 73px;
 }
 
-.combat .wrap-monstres  .monstres > span.fantome > span.sprite { /* sprite debout */
+span.fantome > span.sprite { /* sprite debout */
     width: 51px; height: 73px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -371px -386px;
@@ -199,12 +199,12 @@
 
 /* MOUCHE */
 
-.combat .wrap-monstres  .monstres > span.mouche { /* bounding box */
+span.mouche { /* bounding box */
     width: 65px;
     height: 49px;
 }
 
-.combat .wrap-monstres  .monstres > span.mouche > span.sprite { /* sprite debout */
+span.mouche > span.sprite { /* sprite debout */
     width: 65px; height: 39px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -71px -333px;
@@ -232,12 +232,12 @@
 
 /* POISSON */
 
-.combat .wrap-monstres  .monstres > span.poisson { /* bounding box */
+span.poisson { /* bounding box */
     width: 60px;
     height: 45px;
 }
 
-.combat .wrap-monstres  .monstres > span.poisson > span.sprite { /* sprite debout */
+span.poisson > span.sprite { /* sprite debout */
     width: 60px; height: 45px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -201px 0px;
@@ -265,12 +265,12 @@
 
 /* ESCARGOT */
 
-.combat .wrap-monstres  .monstres > span.escargot { /* bounding box */
+span.escargot { /* bounding box */
     width: 60px;
     height: 39px;
 }
 
-.combat .wrap-monstres  .monstres > span.escargot > span.sprite { /* sprite debout */
+span.escargot > span.sprite { /* sprite debout */
     width: 60px; height: 39px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -197px -435px;
@@ -300,12 +300,12 @@
 
 /* COCCINELLE */
 
-.combat .wrap-monstres  .monstres > span.coccinelle { /* bounding box */
+span.coccinelle { /* bounding box */
     width: 58px;
     height: 34px;
 }
 
-.combat .wrap-monstres  .monstres > span.coccinelle > span.sprite { /* sprite debout */
+span.coccinelle > span.sprite { /* sprite debout */
     width: 58px; height: 34px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -141px -248px;
@@ -335,12 +335,12 @@
 
 /* SERPENT */
 
-.combat .wrap-monstres  .monstres > span.serpent { /* bounding box */
+span.serpent { /* bounding box */
     width: 63px;
     height: 23px;
 }
 
-.combat .wrap-monstres  .monstres > span.serpent > span.sprite { /* sprite debout */
+span.serpent > span.sprite { /* sprite debout */
     width: 63px; height: 23px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -88px 0px;
@@ -365,12 +365,12 @@
 
 /* ENGRENAGE */
 
-.combat .wrap-monstres  .monstres > span.engrenage { /* bounding box */
+span.engrenage { /* bounding box */
     width: 63px;
     height: 62px;
 }
 
-.combat .wrap-monstres  .monstres > span.engrenage > span.sprite { /* sprite debout */
+span.engrenage > span.sprite { /* sprite debout */
     width: 63px; height: 62px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -134px -372px;
@@ -398,12 +398,12 @@
 
 /* SLIME BLEU */
 
-.combat .wrap-monstres  .monstres > span.slimeBleu { /* bounding box */
+span.slimeBleu { /* bounding box */
     width: 57px;
     height: 30px;
 }
 
-.combat .wrap-monstres  .monstres > span.slimeBleu > span.sprite { /* sprite debout */
+span.slimeBleu > span.sprite { /* sprite debout */
     width: 57px; height: 30px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -258px -335px;
@@ -432,12 +432,12 @@
 
 /* SLIME ROSE */
 
-.combat .wrap-monstres  .monstres > span.slimeRose { /* bounding box */
+span.slimeRose { /* bounding box */
     width: 57px;
     height: 30px;
 }
 
-.combat .wrap-monstres  .monstres > span.slimeRose > span.sprite { /* sprite debout */
+span.slimeRose > span.sprite { /* sprite debout */
     width: 57px; height: 30px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -257px -424px;
@@ -466,12 +466,12 @@
 
 /* SLIME VERT */
 
-.combat .wrap-monstres  .monstres > span.slimeVert { /* bounding box */
+span.slimeVert { /* bounding box */
     width: 57px;
     height: 30px;
 }
 
-.combat .wrap-monstres  .monstres > span.slimeVert > span.sprite { /* sprite debout */
+span.slimeVert > span.sprite { /* sprite debout */
     width: 57px; height: 30px;
     top: 0; left: 0;
     background: url("../img/sprites-enemies.png") -257px -84px;
