@@ -186,6 +186,16 @@ a.bouton {
     text-align: center;
 }
 
+@keyframes arrivee-personnages {
+    100% {left: 0}
+}
+
+.etats > .TrDepart .wrap-monstres.monstres-arrivent,
+.etats > .TrDepart .wrap-heros.heros-arrivent {
+    animation: arrivee-personnages 3s linear 1;
+}
+
+
 /* Échec */
 
 .etats > .Echec {

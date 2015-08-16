@@ -130,3 +130,28 @@
 #s7-8-plus-moins-chrono .decor {
     background: url(../img/decors/decor_ville.png);    
 }
+
+
+/* Monde 6 / Caverne */
+
+#s8-9-plus .wrap,
+#s8-9-moins .wrap,
+#s8-9-plus-moins .wrap,
+#s8-9-plus-moins-chrono .wrap {
+    background-image: url(../img/decors/bg_castle.png);
+    background-repeat: repeat;
+}
+
+#s8-9-plus .sol-1,
+#s8-9-moins .sol-1,
+#s8-9-plus-moins .sol-1,
+#s8-9-plus-moins-chrono .sol-1 {
+    background: url("../img/decors/dirtCenter.png");
+}
+
+#s8-9-plus .sol-1 > div,
+#s8-9-moins .sol-1 > div,
+#s8-9-plus-moins .sol-1 > div,
+#s8-9-plus-moins-chrono .sol-1 > div {
+    background: url("../img/decors/dirtMid.png") repeat-x;
+}

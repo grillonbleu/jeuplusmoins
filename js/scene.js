@@ -56,10 +56,23 @@ arithmepique.scene.etats.TrDepart = function(scene) {
     jQuery(".etats > div").addClass("inactif");
     jQuery(".TrDepart").removeClass("inactif");    
     
+    this.scene.affichePersonnages(jQuery(".TrDepart .combat"));
+    
+    var largeur_fenetre = jQuery(window).width();
+    
+    var wrap_heros = jQuery(".TrDepart .wrap-heros")
+            .css("left", -largeur_fenetre/2)
+            .addClass("heros-arrivent");
+    var wrap_monstres = jQuery(".TrDepart .wrap-monstres")
+            .css("left", largeur_fenetre/2)
+            .addClass("monstres-arrivent");
+    
     var that = this;
-    setTimeout(function() {
+    wrap_heros.one(arithmepique.animEnd, function(evt) {
+        wrap_heros.css("left", "");
+        wrap_monstres.css("left", "");
         that.surFin();
-    }, 1000);
+    });
 };
 arithmepique.scene.etats.TrDepart.prototype = {
     surFin: function() {
