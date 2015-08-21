@@ -173,3 +173,35 @@
 #s8-9-plus-moins-chrono .sol-1 > div {
     background: url("../img/decors/sandMid.png") repeat-x;
 }
+
+
+/* Monde 7 / Gâteau */
+
+#s9-10-plus .wrap,
+#s9-10-moins .wrap,
+#s9-10-plus-moins .wrap,
+#s9-10-plus-moins-chrono .wrap {
+    background-image: url("../img/decors/bg_grasslands.png");
+}
+
+#s9-10-plus .decor,
+#s9-10-moins .decor,
+#s9-10-plus-moins .decor,
+#s9-10-plus-moins-chrono .decor {
+    background: url(../img/decors/decor-gateau.png);    
+}
+
+
+#s9-10-plus .sol-1,
+#s9-10-moins .sol-1,
+#s9-10-plus-moins .sol-1,
+#s9-10-plus-moins-chrono .sol-1 {
+    background: url("../img/decors/cakeCenter.png");
+}
+
+#s9-10-plus .sol-1 > div,
+#s9-10-moins .sol-1 > div,
+#s9-10-plus-moins .sol-1 > div,
+#s9-10-plus-moins-chrono .sol-1 > div {
+    background: url("../img/decors/cakeMid.png") repeat-x;
+}

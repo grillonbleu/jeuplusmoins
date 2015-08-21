@@ -244,6 +244,10 @@ arithmepique.Joueurs.prototype = {
         
         var joueur = joueurs[nom_joueur];
         
+        if("oui" === sessionStorage.getItem("ArithmetiqueParent")) {
+            joueur.indexSceneMax = arithmepique.scripts.scenes.length;
+        }
+        
         return joueur;
     },
     
@@ -257,6 +261,12 @@ arithmepique.Joueurs.prototype = {
         }
 
         return total_nb_etoiles;
+    },
+    
+    //Taper dans la console : (new arithmepique.Joueurs()).allumeParent()
+    allumeParent: function() {
+        sessionStorage.setItem("ArithmetiqueParent", "oui");
+        location.reload();
     }
     
 };

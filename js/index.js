@@ -1,4 +1,5 @@
 jQuery(function() {
+    var confirmation_effacer = "Voulez-vous vraiment effacer la partie « %s »? Si c'est le cas, tapez OUI, en majuscules.";
     var gabarit_joueur = "<li><div class='nom'>%s</div><div class='etoiles'>%d</div><div class='scene'>%s</div><div class='ctrl'><button type='button' class='btn-effacer'>Effacer</button></div></li>";
     var contenant_joueurs = jQuery("ul.joueurs");
     
@@ -22,8 +23,10 @@ jQuery(function() {
                 .end()
                 .find(".btn-effacer")
                 .on("click", function() {
-                    joueurs.effacePartie(nom_joueur);
-                    marqueur_partie.remove();
+                    if("OUI" === window.prompt(sprintf(confirmation_effacer, nom_joueur))) {
+                        joueurs.effacePartie(nom_joueur);
+                        marqueur_partie.remove();                        
+                    }                    
                 })
                 .end();
     }
