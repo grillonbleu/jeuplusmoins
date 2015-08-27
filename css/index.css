@@ -124,6 +124,7 @@ ul.joueurs li .nom {
 
 ul.joueurs li .ctrl {
     text-align: right;
+    margin-top: 14px;
 }
 
 ul.joueurs li .etoiles {
