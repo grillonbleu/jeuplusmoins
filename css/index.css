@@ -1,4 +1,5 @@
 html, body {
+    font-family: sans-serif;
     padding: 0;
     margin: auto;
     height: 100%;
@@ -30,6 +31,34 @@ html, body {
     position: relative;
 }
 
+.contenu {
+    display: table;
+    width: 100%;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.contenu .presentation {
+    display: table-cell;
+    width: 50%;
+    padding: 0 .5em;
+}
+
+.contenu .parties {
+    display: table-cell;
+    width: 50%;
+    padding: 0 .5em;
+}
+
+.contenu article,
+form.nouvelle-partie fieldset {
+    background: rgba(255, 255, 255, 0.5);
+    padding: .25em 1em;
+    margin: .5em 0;
+    border-radius: 30px;
+    border: none;
+}
+
 .etats > div, .sol-1 > div, .sol-2 > div, .sol-3 > div {
     display: table-cell;
     vertical-align: bottom;
@@ -57,8 +86,7 @@ html, body {
 
 h1 {
     text-align: center;
-    font-family: sans-serif;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 0 3px black;
     color: white;
     font-size: 32pt;
 }
@@ -74,17 +102,11 @@ form.nouvelle-partie {
 }
 
 form.nouvelle-partie h2 {
-    font-size: 100%;
-    font-weight: normal;
+    font-size: 14pt;
+    font-weight: bold;
     margin-top: 0;
 }
 
-form.nouvelle-partie fieldset {
-    border: 10px solid #94aeb0;
-    border-radius: 40px;
-    background: white;
-    padding: 1em 2em;
-}
 
 label[for=nom-nouveau-joueur] {
     display: block;
@@ -105,38 +127,40 @@ ul.joueurs {
 }
 
 ul.joueurs li {
-    margin: 1em 0;
+    margin: .5em 0;
     
     background: white;
-    padding: 1em 2em;
-    border: 10px solid #94aeb0;
-    
-    border-radius: 40px;
+    padding: .6em .8em;
+    border: 5px solid #94aeb0;    
+    border-radius: 20px;
     
     font-family: sans-serif;
     position: relative;
 }
 
-ul.joueurs li .nom {
-    cursor: pointer;
-    text-decoration: underline;
+ul.joueurs li .joueur,
+ul.joueurs li .actions {
+    display: table;
+    width: 100%;
 }
 
-ul.joueurs li .ctrl {
-    text-align: right;
-    margin-top: 14px;
+ul.joueurs li .joueur > div,
+ul.joueurs li .actions > div {
+    display: table-cell;
+    padding: 0 .5em;
 }
 
-ul.joueurs li .etoiles {
-    position: absolute;
-    right: 2em;
-    top: 1em;
+ul.joueurs li .joueur > div.etoiles {
     padding-right: 24px;
     background: url("../img/icones-carte/icone_etoile_gagnee.png") no-repeat 100% 0;
-    height: 24px;
     line-height: 24px;
+    text-align: right;
 }
 
-ul.joueurs li .scene {
-    display: none;
+ul.joueurs li .joueur > div.nom {
+    font-weight: bold;
+}
+
+ul.joueurs li .actions > div.supprimer {
+    text-align: right;
 }

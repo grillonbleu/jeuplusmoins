@@ -1,6 +1,18 @@
 jQuery(function() {
     var confirmation_effacer = "Voulez-vous vraiment effacer la partie « %s »? Si c'est le cas, tapez OUI, en majuscules.";
-    var gabarit_joueur = "<li><div class='nom'>%s</div><div class='etoiles'>%d</div><div class='scene'>%s</div><div class='ctrl'><button type='button' class='btn-effacer'>Effacer</button></div></li>";
+
+    var gabarit_joueur = "<li>" +
+            "<div class='joueur'>" +
+                "<div class='nom'>%s</div>" +
+                "<div class='scene'>%s</div>" + 
+                "<div class='etoiles'>%d</div>" +
+            "</div>" +
+            "<div class='actions'>" +
+                "<div class='jouer'><button class='btn-jouer'>Jouer</button></div>" +
+                "<div class='supprimer'><button class='btn-effacer'>Effacer</button></div>" + 
+            "</div>" +
+            "</li>";
+
     var contenant_joueurs = jQuery("ul.joueurs");
     
     var audio = new arithmepique.Audio();
@@ -8,14 +20,16 @@ jQuery(function() {
     
     var joueurs = new arithmepique.Joueurs();
     
+    var msgAucunJoueur = jQuery(".aucune-partie").hide();
+    
     function affiche_joueur(nom_joueur, info_joueur) {
         var scene = arithmepique.scripts.scenes[info_joueur.indexSceneMax];
         
         var nb_etoiles = joueurs.obtientTotalEtoilesJoueur(nom_joueur);
         
-        var marqueur_partie = jQuery(sprintf(gabarit_joueur, nom_joueur, nb_etoiles, scene.id))
+        var marqueur_partie = jQuery(sprintf(gabarit_joueur, nom_joueur, scene.id, nb_etoiles))
                 .appendTo(contenant_joueurs)
-                .find(".nom")
+                .find(".btn-jouer")
                 .on("click", function() {
                     joueurs.debuteSessionJoueur(nom_joueur);
                     location.href = "carte.html";
@@ -25,7 +39,10 @@ jQuery(function() {
                 .on("click", function() {
                     if("OUI" === window.prompt(sprintf(confirmation_effacer, nom_joueur))) {
                         joueurs.effacePartie(nom_joueur);
-                        marqueur_partie.remove();                        
+                        marqueur_partie.remove();
+                        if(jQuery(".joueurs li").length === 0) {
+                            msgAucunJoueur.show();
+                        }
                     }                    
                 })
                 .end();
@@ -38,11 +55,18 @@ jQuery(function() {
         affiche_joueur(nom_joueur, info_joueur);
     }
     
+    if(jQuery(".joueurs li").length === 0) {
+        msgAucunJoueur.show();
+    } else {
+        msgAucunJoueur.hide();
+    }
+    
     jQuery("button#bouton-nouveau-joueur").on("click", function() {
         var nom_joueur = jQuery("input#nom-nouveau-joueur").val();
         if(joueurs.creeJoueur(nom_joueur)) {
             var info_joueur = joueurs.obtientJoueur(nom_joueur);
             affiche_joueur(nom_joueur, info_joueur);
+            msgAucunJoueur.hide();
         }
     });
 
