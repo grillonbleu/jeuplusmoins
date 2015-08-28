@@ -9,6 +9,10 @@ html, body {
     color: #94aeb0;
 }
 
+a {
+    color: #0088CC;
+}
+
 .wrap {
     background-color: #d0f4f7;
     height: 100%;
@@ -38,7 +42,26 @@ html, body {
     width: 100%;
     max-width: 50em;
     margin: 0 auto;
+    position: relative;
+    z-index: 100;
 }
+
+.hero {
+    width: 66px; height: 92px;
+    position: absolute;
+    background: red none repeat scroll 0% 0%;
+    bottom: 0px;
+    left: 50px;
+    z-index: 50;
+    background: url("../img/sprites-heros/alienGreen.png") -69px -379px;
+    animation: hero-vert-court .3s steps(1) infinite;
+}
+
+@keyframes hero-vert-court {
+    0% {background-position: 0 0;width: 69px} /* court1 */
+    50% {background-position: -69px -193px;} /* court2 */
+}
+
 
 .contenu .presentation {
     display: table-cell;
@@ -63,7 +86,6 @@ form.nouvelle-partie fieldset {
 
 .etats > div, .sol-1 > div, .sol-2 > div, .sol-3 > div {
     display: table-cell;
-    vertical-align: bottom;
     position: relative;
 }
 
