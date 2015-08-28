@@ -1,6 +1,6 @@
 # Arithmépique
 
-[Jouer](http://lampyridae.github.io/jeuplusmoins/)
+[*Jouer*](http://lampyridae.github.io/jeuplusmoins/)
 
 Arithmépique est un jeu d'exercice destiné aux enfants de première année du primaire.
 On y pratique les additions et soustractions simples, sans dizaines ni retenues.
@@ -9,13 +9,14 @@ J'ai développé ce jeu pour offrir à mon fils une façon ludique de se pratiqu
 En offrant ce jeu à tous j'espère aider d'autres petits à faire avec entrain
 leur premiers pas en mathématiques.
 
+##Générique
 
 <dl>
      <dt>Idée, conception, programmation et mise en page</dt>
      <dd>François Moreau</dd>
      <dt>Idée et tests</dt>
      <dd>Xavier Moreau, 7 ans</dd>
-     <dt>Graphisme<dt>
+     <dt>Graphisme</dt>
      <dd><a href="http://kenney.nl/assets">Kenney</a></dd>
      <dt>Musique</dt>
      <dd><a href="https://www.freesound.org/people/FoolBoyMedia/sounds/257997/">FoolBoyMedia, Shanty Town</a></dd>
