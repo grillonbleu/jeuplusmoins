@@ -72,4 +72,17 @@ jQuery(function() {
         }
     });
 
+
+
+    var details_generique = jQuery(".generique .details").hide();
+    jQuery(".generique .ouvrir").bind('click', function(e) {
+        e.preventDefault();
+        
+        var hauteur_vue = jQuery(window).height();
+        
+        $.Zebra_Dialog(details_generique.html(), {
+            width: 800,
+            max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150
+        });
+    });
 });
