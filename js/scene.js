@@ -485,6 +485,7 @@ arithmepique.scene.Scene = function(script_id) {
     this.script = scenes.obtientSceneParId(script_id);
     
     this.audio = new arithmepique.Audio();
+    this.audio.ajouteBouton();
     
     
     if(this.script.estBoss) {

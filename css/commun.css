@@ -1,0 +1,46 @@
+.audio-toggle {
+    background: transparent url("../img/musicOff.png") no-repeat 0 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    border: none;
+}
+
+.audio-toggle.on {
+    background-image: url("../img/musicOn.png");
+}
+
+.audio-toggle:active {
+    border: none;
+}
+
+button, a.bouton {
+    font-family: sans-serif;
+    font-size: 12pt;
+    display: inline-block;
+    border: none;
+    padding: 2px;
+    background: #FFD173;
+    color: black;
+    text-decoration: none;
+    
+    border-bottom: 2px solid #B9903E;
+    border-top: 1px solid #FFD173;
+    
+    vertical-align: top;
+}
+
+button:active, a.bouton:active {
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    
+    border-bottom: 1px solid #B9903E;
+    border-top: 2px solid #FFD173;
+
+}

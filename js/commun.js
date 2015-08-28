@@ -84,7 +84,10 @@ arithmepique.Scenes.prototype = {
     }
 };
 
-arithmepique.Audio = function() {};
+arithmepique.Audio = function() {
+    this.volumeCourant = this.estAllume() ?
+        1 : 0;
+};
 arithmepique.Audio.prototype = {
     lecteurs: {},
     
@@ -111,6 +114,7 @@ arithmepique.Audio.prototype = {
             this.currentTime = 0;
             this.play();
         }, false);
+        this.lecteurs[nom].volume = this.volumeCourant;
         this.lecteurs[nom].play();
     },
     
@@ -129,8 +133,52 @@ arithmepique.Audio.prototype = {
                 break;
                
         }
-        
+        this.lecteurs[nom].volume = this.volumeCourant;
         this.lecteurs[nom].play();
+    },
+    
+    ajouteBouton: function() {
+        var that = this;
+        this.toggleBtn = jQuery("<button class='audio-toggle'></button>")
+                .on("click", function() {
+                    that.toggle();
+                })
+                .appendTo("body");
+        
+        if(this.estAllume()) {
+            this.toggleBtn.addClass("on");
+        }
+    },
+    
+    toggle: function() {
+        if(this.estAllume()) {
+            localStorage.setItem("ArithmepicAudioOn", "non");
+            if(this.toggleBtn) {
+                this.toggleBtn.removeClass("on");
+            }
+            this.ajusteVolume(0);
+        } else {
+            localStorage.setItem("ArithmepicAudioOn", "oui");
+            if(this.toggleBtn) {
+                this.toggleBtn.addClass("on");
+            }
+            this.ajusteVolume(1);
+        }
+    },
+    
+    ajusteVolume: function(volume) {
+        this.volumeCourant = volume;
+        
+        for(var nom_son in this.lecteurs) {
+            if(this.lecteurs.hasOwnProperty(nom_son)) {
+                this.lecteurs[nom_son].volume = volume;
+            }
+        }
+    },
+    
+    estAllume: function() {
+        var chaine_audio_allume = localStorage.getItem("ArithmepicAudioOn");
+        return (chaine_audio_allume === "oui");
     }
 };
 
@@ -230,15 +278,6 @@ arithmepique.Joueurs.prototype = {
         return scenes.length - 1;
     },
     
-    //TODO retirer
-    obtientEtoilesJoueur: function(nom_joueur) {
-        var joueurs = this.obtientJoueurs();
-        
-        var joueur = joueurs[nom_joueur];
-        
-        return joueur.etoiles;
-    },
-    
     obtientJoueur: function(nom_joueur) {
         var joueurs = this.obtientJoueurs();
         
@@ -252,7 +291,7 @@ arithmepique.Joueurs.prototype = {
     },
     
     obtientTotalEtoilesJoueur: function(nom_joueur) {
-        var etoiles_recues = this.obtientEtoilesJoueur(nom_joueur);
+        var etoiles_recues = this.obtientJoueur(nom_joueur).etoiles;
         
         var total_nb_etoiles = 0;
         for(var scene_id in etoiles_recues) {

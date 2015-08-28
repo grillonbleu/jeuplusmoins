@@ -17,6 +17,8 @@ jQuery(function() {
     
     var audio = new arithmepique.Audio();
     audio.jouerMusique("presentation");
+    audio.ajouteBouton();
+    
     
     var joueurs = new arithmepique.Joueurs();
     

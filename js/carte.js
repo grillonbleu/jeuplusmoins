@@ -3,12 +3,13 @@ arithmepique.Carte = function() {
     var scripts_scenes = arithmepique.scripts.scenes;
     var portes = arithmepique.scripts.portes;
     var nom_joueur = this.joueurs.obtientNomJoueurSession();
-    var etoiles_recues = this.joueurs.obtientEtoilesJoueur(nom_joueur);
+    var etoiles_recues = this.joueurs.obtientJoueur(nom_joueur).etoiles;
     
     this.totalNbEtoiles = this.joueurs.obtientTotalEtoilesJoueur(nom_joueur);
     
     var audio = new arithmepique.Audio();
     audio.jouerMusique("carte");
+    audio.ajouteBouton();
     
     jQuery(".nb-etoiles-total").text(this.totalNbEtoiles);
     
