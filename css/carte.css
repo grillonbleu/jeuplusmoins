@@ -38,6 +38,7 @@ img {
 
 #carte .scene.actif .jeton {
     background: transparent url(../img/icones-carte/scene-actif.png);
+    -webkit-animation: scene-clignotte 1s linear infinite;
     animation: scene-clignotte 1s linear infinite;
 }
 

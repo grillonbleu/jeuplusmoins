@@ -52,6 +52,22 @@ arithmepique.Carte = function() {
             }
         }
     }
+    
+    //Aide
+    var details_aide = jQuery("#aide");
+    jQuery("<button id='btn-aide'></button>")
+        .appendTo("body")
+        .on("click", function(e)  {
+            e.preventDefault();
+
+            var hauteur_vue = jQuery(window).height();
+
+            $.Zebra_Dialog(details_aide.html(), {
+                width: 800,
+                max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150,
+                buttons: ["Fermer"]
+            });
+        });
 };
 arithmepique.Carte.prototype = {
 

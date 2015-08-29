@@ -19,6 +19,23 @@
     border: none;
 }
 
+#btn-aide {
+    background: transparent url("../img/question.png") no-repeat 0 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 50px;
+    z-index: 1000;
+    border: none;
+}
+
+#btn-aide {
+    border: none;
+}
+
 button, a.bouton {
     font-family: sans-serif;
     font-size: 12pt;
@@ -42,5 +59,8 @@ button:active, a.bouton:active {
     
     border-bottom: 1px solid #B9903E;
     border-top: 2px solid #FFD173;
+}
 
+#aide {
+    display: none;
 }

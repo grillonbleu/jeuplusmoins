@@ -75,7 +75,7 @@ jQuery(function() {
 
 
     var details_generique = jQuery(".generique .details").hide();
-    jQuery(".generique .ouvrir").bind('click', function(e) {
+    jQuery(".generique .ouvrir").on('click', function(e) {
         e.preventDefault();
         
         var hauteur_vue = jQuery(window).height();
@@ -86,4 +86,22 @@ jQuery(function() {
             buttons: ["Fermer"]
         });
     });
+    
+    
+    
+    //Navigateur OK?
+    var details_fonctionalites_manquantes = jQuery("#fonctionnalite-manquante");
+    if(!Modernizr.localstorage ||
+       !Modernizr.sessionstorage ||
+       !Modernizr.cssanimations ||
+       !Modernizr.audio) {
+   
+        var hauteur_vue = jQuery(window).height();
+        
+        $.Zebra_Dialog(details_fonctionalites_manquantes.html(), {
+            width: 800,
+            max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150,
+            buttons: ["Fermer"]
+        });
+    }
 });

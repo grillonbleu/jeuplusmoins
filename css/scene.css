@@ -152,7 +152,9 @@ html, body {
 }
 
 .gui .equation .reponse-donnee.anim {
+   -webkit-animation: equation-reponse-donnee 1s linear 1;
    animation: equation-reponse-donnee 1s linear 1;
+   -webkit-animation-fill-mode: none;
    animation-fill-mode: none;
 }
 
@@ -184,7 +186,8 @@ html, body {
 
 .etats > .TrDepart .wrap-monstres.monstres-arrivent,
 .etats > .TrDepart .wrap-heros.heros-arrivent {
-    animation: arrivee-personnages 3s linear 1;
+    -webkit-animation: arrivee-personnages 3s linear 1;
+    animation:         arrivee-personnages 3s linear 1;
 }
 
 
@@ -306,7 +309,8 @@ html, body {
     position: absolute;
     right: 0;
     bottom: 0;
-    animation: hero-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
+    -webkit-animation: hero-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
+    animation:         hero-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
 }
 
 /* Déplacement + opacité, héro battu */
@@ -318,7 +322,8 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 0;
-    animation: hero-battu 1s linear 1;
+    -webkit-animation: hero-battu 1s linear 1;
+    animation:         hero-battu 1s linear 1;
 }
 
 
@@ -330,7 +335,8 @@ html, body {
 .combat .wrap-heros .heros > span.va-arriere {
     position: absolute;
     bottom: 0;
-    animation: hero-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
+    -webkit-animation: hero-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
+    animation:         hero-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
 }
 
 /* Le contenant de héros, lorsque que le héros de l'avant attaque/saute */
@@ -340,7 +346,8 @@ html, body {
     100% {padding-right: 0}
 }
 .combat .wrap-heros .heros.avancent {
-    animation: heros-avancent 1s linear 1;
+    -webkit-animation: heros-avancent 1s linear 1;
+    animation:         heros-avancent 1s linear 1;
 }
 
 
@@ -388,6 +395,7 @@ html, body {
     position: absolute;
     bottom: 0;
     left: 0;
+    -webkit-animation: monstre-battu 1s linear 1;
     animation: monstre-battu 1s linear 1;
 }
 
@@ -401,6 +409,7 @@ html, body {
 .combat .wrap-monstres .monstres > span.attaque {
     position: absolute;
     left: 0;
+    -webkit-animation: monstre-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
     animation: monstre-attaque 1s cubic-bezier(0.140, 0.565, 0.900, 0.615) 1;
 }
 
@@ -408,6 +417,7 @@ html, body {
     100% {padding-left: 0}
 }
 .combat .wrap-monstres .monstres.avancent {
+    -webkit-animation: monstres-avancent 1s linear 1;
     animation: monstres-avancent 1s linear 1;
 }
 
@@ -419,5 +429,6 @@ html, body {
 .combat .wrap-monstres .monstres > span.va-arriere {
     position: absolute;
     bottom: 0;
+    -webkit-animation: monstre-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
     animation: monstre-va-arriere 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1;
 }

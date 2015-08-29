@@ -29,7 +29,8 @@
 .combat .wrap-heros.heros-arrivent .heros > span.vert > span.sprite,
 .combat .wrap-heros .heros > span.vert.va-arriere > span.sprite,
 .combat .wrap-heros .heros.avancent span.vert:not(.va-arriere) span.sprite { /* court */
-    animation: hero-vert-court .3s steps(1) infinite;
+    -webkit-animation: hero-vert-court .3s steps(1) infinite;
+    animation:         hero-vert-court .3s steps(1) infinite;
 }
 
 /* BEIGE */
@@ -64,7 +65,8 @@
 .combat .wrap-heros.heros-arrivent .heros > span.beige > span.sprite,
 .combat .wrap-heros .heros > span.beige.va-arriere > span.sprite,
 .combat .wrap-heros .heros.avancent span.beige:not(.va-arriere) span.sprite { /* court */
-    animation: hero-beige-court .3s steps(1) infinite;
+    -webkit-animation: hero-beige-court .3s steps(1) infinite;
+    animation:         hero-beige-court .3s steps(1) infinite;
 }
 
 /* ROSE */
@@ -98,7 +100,8 @@
 .combat .wrap-heros.heros-arrivent .heros > span.rose > span.sprite,
 .combat .wrap-heros .heros > span.rose.va-arriere > span.sprite,
 .combat .wrap-heros .heros.avancent span.rose:not(.va-arriere) span.sprite { /* court */
-    animation: hero-rose-court .3s steps(1) infinite;
+    -webkit-animation: hero-rose-court .3s steps(1) infinite;
+    animation:         hero-rose-court .3s steps(1) infinite;
 }
 
 /* JAUNE */
@@ -132,7 +135,8 @@
 .combat .wrap-heros.heros-arrivent .heros > span.jaune > span.sprite,
 .combat .wrap-heros .heros > span.jaune.va-arriere > span.sprite,
 .combat .wrap-heros .heros.avancent span.jaune:not(.va-arriere) span.sprite { /* court */
-    animation: hero-jaune-court .3s steps(1) infinite;
+    -webkit-animation: hero-jaune-court .3s steps(1) infinite;
+    animation:         hero-jaune-court .3s steps(1) infinite;
 }
 
 /* BLEU */
@@ -167,5 +171,6 @@
 .combat .wrap-heros.heros-arrivent .heros > span.bleu > span.sprite,
 .combat .wrap-heros .heros > span.bleu.va-arriere > span.sprite,
 .combat .wrap-heros .heros.avancent span.bleu:not(.va-arriere) span.sprite { /* court */
-    animation: hero-bleu-court .3s steps(1) infinite;
+    -webkit-animation: hero-bleu-court .3s steps(1) infinite;
+    animation:         hero-bleu-court .3s steps(1) infinite;
 }

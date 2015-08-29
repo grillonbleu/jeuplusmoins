@@ -28,7 +28,8 @@ span.araignee > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.araignee > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.araignee:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.araignee.va-arriere > span.sprite {
-    animation: monstre-araignee-court .3s steps(1) infinite;
+    -webkit-animation: monstre-araignee-court .3s steps(1) infinite;
+    animation:         monstre-araignee-court .3s steps(1) infinite;
 }
 
 
@@ -63,7 +64,8 @@ span.abeille > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.abeille > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.abeille:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.abeille.va-arriere > span.sprite {
-    animation: monstre-abeille-court .3s steps(1) infinite;
+    -webkit-animation: monstre-araignee-court .3s steps(1) infinite;
+    animation:         monstre-abeille-court .3s steps(1) infinite;
 }
 
 /* RAT */
@@ -97,7 +99,8 @@ span.rat > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.rat > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.rat:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.rat.va-arriere > span.sprite {
-    animation: monstre-rat-court .3s steps(1) infinite;
+    -webkit-animation: monstre-rat-court .3s steps(1) infinite;
+    animation:         monstre-rat-court .3s steps(1) infinite;
 }
 
 /* GRENOUILLE */
@@ -132,7 +135,8 @@ span.grenouille > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.grenouille > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.grenouille:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.grenouille.va-arriere > span.sprite {
-    animation: monstre-grenouille-court .3s steps(1) infinite;
+    -webkit-animation: monstre-grenouille-court .3s steps(1) infinite;
+    animation:         monstre-grenouille-court .3s steps(1) infinite;
 }
 
 /* CHAUVE SOURIS */
@@ -167,7 +171,8 @@ span.chauve-souris > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.chauve-souris > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.chauve-souris:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.chauve-souris.va-arriere > span.sprite {
-    animation: monstre-chauve-souris-court .3s steps(1) infinite;
+    -webkit-animation: monstre-chauve-souris-court .3s steps(1) infinite;
+    animation:         monstre-chauve-souris-court .3s steps(1) infinite;
 }
 
 /* FANTOME */
@@ -200,7 +205,8 @@ span.fantome > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.fantome > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.fantome:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.fantome.va-arriere > span.sprite {
-    animation: monstre-fantome-court .3s steps(1) infinite;
+    -webkit-animation: monstre-fantome-court .3s steps(1) infinite;
+    animation:         monstre-fantome-court .3s steps(1) infinite;
 }
 
 /* MOUCHE */
@@ -234,7 +240,8 @@ span.mouche > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.mouche > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.mouche:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.mouche.va-arriere > span.sprite {
-    animation: monstre-mouche-court .3s steps(1) infinite;
+    -webkit-animation: monstre-mouche-court .3s steps(1) infinite;
+    animation:         monstre-mouche-court .3s steps(1) infinite;
 }
 
 /* POISSON */
@@ -268,7 +275,8 @@ span.poisson > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.poisson > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.poisson:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.poisson.va-arriere > span.sprite {
-    animation: monstre-poisson-court .3s steps(1) infinite;
+    -webkit-animation: monstre-poisson-court .3s steps(1) infinite;
+    animation:         monstre-poisson-court .3s steps(1) infinite;
 }
 
 /* ESCARGOT */
@@ -304,7 +312,8 @@ span.escargot > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.escargot > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.escargot:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.escargot.va-arriere > span.sprite {
-    animation: monstre-escargot-court .3s steps(1) infinite;
+    -webkit-animation: monstre-escargot-court .3s steps(1) infinite;
+    animation:         monstre-escargot-court .3s steps(1) infinite;
 }
 
 /* COCCINELLE */
@@ -340,7 +349,8 @@ span.coccinelle > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.coccinelle > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.coccinelle:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.coccinelle.va-arriere > span.sprite {
-    animation: monstre-coccinelle-court .3s steps(1) infinite;
+    -webkit-animation: monstre-coccinelle-court .3s steps(1) infinite;
+    animation:         monstre-coccinelle-court .3s steps(1) infinite;
 }
 
 /* SERPENT */
@@ -371,7 +381,8 @@ span.serpent > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.serpent > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.serpent:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.serpent.va-arriere > span.sprite {
-    animation: monstre-serpent-court .3s steps(1) infinite;
+    -webkit-animation: monstre-serpent-court .3s steps(1) infinite;
+    animation:         monstre-serpent-court .3s steps(1) infinite;
 }
 
 /* ENGRENAGE */
@@ -405,7 +416,8 @@ span.engrenage > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.engrenage > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.engrenage:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.engrenage.va-arriere > span.sprite {
-    animation: monstre-engrenage-court .3s steps(1) infinite;
+    -webkit-animation: monstre-engrenage-court .3s steps(1) infinite;
+    animation:         monstre-engrenage-court .3s steps(1) infinite;
 }
 
 /* SLIME BLEU */
@@ -440,7 +452,8 @@ span.slimeBleu > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.slimeBleu > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.slimeBleu:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.slimeBleu.va-arriere > span.sprite {
-    animation: monstre-slimeBleu-court .3s steps(1) infinite;
+    -webkit-animation: monstre-slimeBleu-court .3s steps(1) infinite;
+    animation:         monstre-slimeBleu-court .3s steps(1) infinite;
 }
 
 /* SLIME ROSE */
@@ -475,7 +488,8 @@ span.slimeRose > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.slimeRose > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.slimeRose:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.slimeRose.va-arriere > span.sprite {
-    animation: monstre-slimeRose-court .3s steps(1) infinite;
+    -webkit-animation: monstre-slimeRose-court .3s steps(1) infinite;
+    animation:         monstre-slimeRose-court .3s steps(1) infinite;
 }
 
 /* SLIME VERT */
@@ -510,6 +524,7 @@ span.slimeVert > span.sprite { /* sprite debout */
 .combat .wrap-monstres.monstres-arrivent .monstres > span.slimeVert > span.sprite,
 .combat .wrap-monstres .monstres.avancent span.slimeVert:not(.va-arriere) span.sprite,
 .combat .wrap-monstres .monstres > span.slimeVert.va-arriere > span.sprite {
-    animation: monstre-slimeVert-court .3s steps(1) infinite;
+    -webkit-animation: monstre-slimeVert-court .3s steps(1) infinite;
+    animation:         monstre-slimeVert-court .3s steps(1) infinite;
 }
 

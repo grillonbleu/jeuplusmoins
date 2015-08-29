@@ -22,6 +22,7 @@ a {
     background-position: left 80%;
     background-repeat: repeat-x;
     background-image: url("../img/decors/bg_grasslands.png");
+    -webkit-animation: wrap-scroll 30s linear infinite;
     animation: wrap-scroll 30s linear infinite;
 }
 
@@ -54,6 +55,7 @@ a {
     left: 50px;
     z-index: 50;
     background: url("../img/sprites-heros/alienGreen.png") -69px -379px;
+    -webkit-animation: hero-vert-court .3s steps(1) infinite;
     animation: hero-vert-court .3s steps(1) infinite;
 }
 
@@ -93,6 +95,7 @@ form.nouvelle-partie fieldset {
     background: url("../img/decors/grassCenter.png");
     height: 20%;
     display: table-row;
+    -webkit-animation: sol-scroll .5s linear infinite;
     animation: sol-scroll .5s linear infinite;
 }
 
@@ -100,6 +103,7 @@ form.nouvelle-partie fieldset {
     background: url("../img/decors/grassMid.png");
     background-repeat: repeat-x;
     background-position: 0 0;
+    -webkit-animation: sol-scroll .5s linear infinite;
     animation: sol-scroll .5s linear infinite;
 }
 
@@ -187,4 +191,8 @@ ul.joueurs li .joueur > div.nom {
 
 ul.joueurs li .actions > div.supprimer {
     text-align: right;
+}
+
+#fonctionnalite-manquante {
+    display: none;
 }
