@@ -82,7 +82,8 @@ jQuery(function() {
         
         $.Zebra_Dialog(details_generique.html(), {
             width: 800,
-            max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150
+            max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150,
+            buttons: ["Fermer"]
         });
     });
 });

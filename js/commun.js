@@ -178,7 +178,7 @@ arithmepique.Audio.prototype = {
     
     estAllume: function() {
         var chaine_audio_allume = localStorage.getItem("ArithmepicAudioOn");
-        return (chaine_audio_allume === "oui");
+        return (chaine_audio_allume !== "non");
     }
 };
 
