@@ -94,7 +94,7 @@ jQuery(function() {
     if(!Modernizr.localstorage ||
        !Modernizr.sessionstorage ||
        !Modernizr.cssanimations ||
-       !Modernizr.audio || true) {
+       !Modernizr.audio) {
    
         var hauteur_vue = jQuery(window).height();
         
