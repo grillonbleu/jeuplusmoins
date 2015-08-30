@@ -94,14 +94,15 @@ jQuery(function() {
     if(!Modernizr.localstorage ||
        !Modernizr.sessionstorage ||
        !Modernizr.cssanimations ||
-       !Modernizr.audio) {
+       !Modernizr.audio || true) {
    
         var hauteur_vue = jQuery(window).height();
         
         $.Zebra_Dialog(details_fonctionalites_manquantes.html(), {
             width: 800,
             max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150,
-            buttons: ["Fermer"]
+            buttons: ["Fermer"],
+            type: "error"
         });
     }
 });

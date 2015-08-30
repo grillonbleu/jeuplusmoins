@@ -65,7 +65,8 @@ arithmepique.Carte = function() {
             $.Zebra_Dialog(details_aide.html(), {
                 width: 800,
                 max_height: hauteur_vue > 700 ? 550 : hauteur_vue - 150,
-                buttons: ["Fermer"]
+                buttons: ["Fermer"],
+                type: "question"
             });
         });
 };

@@ -196,3 +196,37 @@ ul.joueurs li .actions > div.supprimer {
 #fonctionnalite-manquante {
     display: none;
 }
+
+.nav-comp {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.nav-comp a {
+    text-decoration: none;
+}
+
+.nav-comp td {
+    text-align: center;
+    vertical-align:middle;
+}
+
+.nav-comp .logos td {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.nav-comp td img {
+    vertical-align: middle;
+}
+
+.nav-comp .recommande {
+    border: 3px solid orange;
+}
+
+.nav-comp .details .recommande {
+    background: orange;
+    color: white;
+    font-weight: bold;
+}

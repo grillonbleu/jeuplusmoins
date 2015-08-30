@@ -42,6 +42,11 @@ img {
     animation: scene-clignotte 1s linear infinite;
 }
 
+.jeton-aide {
+    -webkit-animation: scene-clignotte 1s linear infinite;
+    animation: scene-clignotte 1s linear infinite;
+}
+
 #carte .scene.actif.complet .jeton {
     background: transparent url(../img/icones-carte/scene-complet.png);
 }

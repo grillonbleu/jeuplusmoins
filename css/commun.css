@@ -11,6 +11,10 @@
     border: none;
 }
 
+img {
+    vertical-align: middle;
+}
+
 .audio-toggle.on {
     background-image: url("../img/musicOn.png");
 }
