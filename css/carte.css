@@ -37,14 +37,14 @@ img {
 }
 
 #carte .scene.actif .jeton {
-    background: transparent url(../img/icones-carte/scene-actif.png);
-    -webkit-animation: scene-clignotte 1s linear infinite;
-    animation: scene-clignotte 1s linear infinite;
+    background: transparent url(../img/icones-carte/scene-actif.gif);
+    /*-webkit-animation: scene-clignotte 1s linear infinite;
+    animation: scene-clignotte 1s linear infinite;*/
 }
 
 .jeton-aide {
-    -webkit-animation: scene-clignotte 1s linear infinite;
-    animation: scene-clignotte 1s linear infinite;
+    /*-webkit-animation: scene-clignotte 1s linear infinite;
+    animation: scene-clignotte 1s linear infinite;*/
 }
 
 #carte .scene.actif.complet .jeton {
@@ -99,9 +99,18 @@ img {
 }
 
 @keyframes scene-clignotte {
-    0% { filter: brightness(100%) }
-    50% { filter: brightness(200%) }
-    100% { filter: brightness(100%) }
+    0% { 
+        filter: brightness(100%);
+        -ms-filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(200%);
+        -ms-filter: brightness(200%);
+    }
+    100% {
+        filter: brightness(100%);
+        -ms-filter: brightness(100%);
+    }
 }
 
 #carte .porte {

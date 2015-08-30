@@ -22,7 +22,6 @@ html, body {
 }
 
 .decor {
-    z-index: 10;
     height: 490px;
     position: absolute;
     bottom: 20%;
@@ -266,6 +265,7 @@ html, body {
     table-layout: fixed;
     position: absolute;
     bottom: 0;
+    line-height: 0;
 }
 
 /* heros */
@@ -322,8 +322,9 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 0;
-    -webkit-animation: hero-battu 1s linear 1;
-    animation:         hero-battu 1s linear 1;
+    opacity: 0;
+    -webkit-animation: hero-battu 1s linear 1 forwards;
+    animation:         hero-battu 1s linear 1 forwards;
 }
 
 
