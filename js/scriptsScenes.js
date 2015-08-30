@@ -29,6 +29,8 @@ arithmepique.scripts.portes = {
 
 arithmepique.scripts.scenes = [
     {
+        titre: "Monde 1, les plaines : plus",
+        
         id: "1-2-3-plus",
         posCarte: "9,2", //top, left
 
@@ -50,6 +52,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 1, les plaines : moins",
         id: "1-2-3-moins",
         posCarte: "14,2",
         operations: [
@@ -70,6 +73,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 1, les plaines : plus et moins",
         id: "1-2-3-plus-moins",
         posCarte: "18,2",
         operations: [
@@ -99,6 +103,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 1, les plaines : forteresse",
         id: "1-2-3-plus-moins-chrono",
         posCarte: "22,3",
         operations: [
@@ -130,6 +135,7 @@ arithmepique.scripts.scenes = [
         estBoss: true
     },
     {
+        titre: "Monde 2, la forêt : plus",
         id: "4-5-plus",
         posCarte: "28,5",
         operations: [
@@ -152,6 +158,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 2, la forêt : moins",
         id: "4-5-moins",
         posCarte: "30,2",
         operations: [
@@ -173,6 +180,7 @@ arithmepique.scripts.scenes = [
         },
         chrono: false   },
     {
+        titre: "Monde 2, la forêt : plus et moins",
         id: "4-5-plus-moins",
         posCarte: "32,7",
         operations: [
@@ -206,6 +214,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 2, la forêt : plus et moins chrono",
         id: "4-5-plus-moins-chrono",
         posCarte: "38,6",
         operations: [
@@ -239,6 +248,7 @@ arithmepique.scripts.scenes = [
         chrono: true
     },
     {
+        titre: "Monde 2, la forêt : forteresse",
         id: "4-5-plus-moins-chrono-recap",
         posCarte: "45,5",
         operations: [
@@ -282,6 +292,7 @@ arithmepique.scripts.scenes = [
         estBoss: true
     },
     {
+        titre: "Monde 3, le désert : plus",
         id: "5-6-plus",
         posCarte: "46,9",
         operations: [
@@ -306,6 +317,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 3, le désert : moins",
         id: "5-6-moins",
         posCarte: "46,13",
         operations: [
@@ -329,6 +341,7 @@ arithmepique.scripts.scenes = [
         },
         chrono: false   },
     {
+        titre: "Monde 3, le désert : plus et moins",
         id: "5-6-plus-moins",
         posCarte: "45,16",
         operations: [
@@ -366,6 +379,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 3, le désert : plus et moins chrono",
         id: "5-6-plus-moins-chrono",
         posCarte: "44,21",
         operations: [
@@ -403,6 +417,7 @@ arithmepique.scripts.scenes = [
         chrono: true
     },
     {
+        titre: "Monde 3, le désert : forteresse",
         id: "5-6-plus-moins-chrono-recap",
         posCarte: "39,19",
         operations: [
@@ -451,6 +466,7 @@ arithmepique.scripts.scenes = [
         estBoss: true
     },
     {
+        titre: "Monde 4, le grand lac : plus",
         id: "6-7-plus",
         posCarte: "30,20",
         operations: [
@@ -481,6 +497,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 4, le grand lac : moins",
         id: "6-7-moins",
         posCarte: "30,23",
         operations: [
@@ -506,6 +523,7 @@ arithmepique.scripts.scenes = [
         },
         chrono: false   },
     {
+        titre: "Monde 4, le grand lac : plus et moins",
         id: "6-7-plus-moins",
         posCarte: "25,23",
         operations: [
@@ -547,6 +565,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 4, le grand lac : plus et moins chrono",
         id: "6-7-plus-moins-chrono",
         posCarte: "21,23",
         operations: [
@@ -590,6 +609,7 @@ arithmepique.scripts.scenes = [
         chrono: true
     },
     {
+        titre: "Monde 4, le grand lac : forteresse",
         id: "6-7-plus-moins-chrono-recap",
         posCarte: "17,21",
         operations: [
@@ -654,6 +674,7 @@ arithmepique.scripts.scenes = [
     
     
     {
+        titre: "Monde 5, le village : plus",
         id: "7-8-plus",
         posCarte: "10,23",
         operations: [
@@ -678,6 +699,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 5, le village : moins",
         id: "7-8-moins",
         posCarte: "10,19",
         operations: [
@@ -701,6 +723,7 @@ arithmepique.scripts.scenes = [
         },
         chrono: false   },
     {
+        titre: "Monde 5, le village : plus et moins",
         id: "7-8-plus-moins",
         posCarte: "6,19",
         operations: [
@@ -738,6 +761,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 5, le village : plus et moins chrono",
         id: "7-8-plus-moins-chrono",
         posCarte: "5,23",
         operations: [
@@ -775,6 +799,7 @@ arithmepique.scripts.scenes = [
         chrono: true
     },
     {
+        titre: "Monde 5, le village : forteresse",
         id: "7-8-plus-moins-chrono-recap",
         posCarte: "2,23",
         operations: [
@@ -835,6 +860,7 @@ arithmepique.scripts.scenes = [
     
 
     {
+        titre: "Monde 6, la caverne : plus",
         id: "8-9-plus",
         posCarte: "2,13",
         operations: [
@@ -862,6 +888,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 6, la caverne : moins",
         id: "8-9-moins",
         posCarte: "6,13",
         operations: [
@@ -888,6 +915,7 @@ arithmepique.scripts.scenes = [
         },
         chrono: false   },
     {
+        titre: "Monde 6, la caverne : plus et moins",
         id: "8-9-plus-moins",
         posCarte: "6,10",
         operations: [
@@ -932,6 +960,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 6, la caverne : plus et moins chrono",
         id: "8-9-plus-moins-chrono",
         posCarte: "10,11",
         operations: [
@@ -977,6 +1006,7 @@ arithmepique.scripts.scenes = [
     },
     
     {
+        titre: "Monde 6, la caverne : forteresse",
         id: "8-9-plus-moins-chrono-recap",
         posCarte: "13,14",
         operations: [
@@ -1044,6 +1074,7 @@ arithmepique.scripts.scenes = [
     
 
     {
+        titre: "Monde 8, le gâteau : plus",
         id: "9-10-plus",
         posCarte: "21,14",
         operations: [
@@ -1073,6 +1104,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 8, le gâteau : moins",
         id: "9-10-moins",
         posCarte: "21,10",
         operations: [
@@ -1104,6 +1136,7 @@ arithmepique.scripts.scenes = [
     },
     
     {
+        titre: "Monde 8, le gâteau : plus et moins",
         id: "9-10-plus-moins",
         posCarte: "27,10",
         operations: [
@@ -1152,6 +1185,7 @@ arithmepique.scripts.scenes = [
         chrono: false
     },
     {
+        titre: "Monde 8, le gâteau : plus et moins chrono",
         id: "9-10-plus-moins-chrono",
         posCarte: "25,17",
         operations: [
@@ -1202,6 +1236,7 @@ arithmepique.scripts.scenes = [
 
 
     {
+        titre: "Monde 8, le gâteau : forteresse",
         id: "9-10-plus-moins-chrono-recap",
         posCarte: "25,13",
         operations: [

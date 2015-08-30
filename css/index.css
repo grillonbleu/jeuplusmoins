@@ -185,6 +185,10 @@ ul.joueurs li .joueur > div.etoiles {
     text-align: right;
 }
 
+ul.joueurs li .joueur > div.scene {
+    font-style: italic;
+}
+
 ul.joueurs li .joueur > div.nom {
     font-weight: bold;
 }

@@ -29,7 +29,7 @@ jQuery(function() {
         
         var nb_etoiles = joueurs.obtientTotalEtoilesJoueur(nom_joueur);
         
-        var marqueur_partie = jQuery(sprintf(gabarit_joueur, nom_joueur, scene.id, nb_etoiles))
+        var marqueur_partie = jQuery(sprintf(gabarit_joueur, nom_joueur, scene.titre, nb_etoiles))
                 .appendTo(contenant_joueurs)
                 .find(".btn-jouer")
                 .on("click", function() {
