@@ -1,6 +1,6 @@
 # Arithmépique
 
-[*Jouer*](http://lampyridae.github.io/jeuplusmoins/)
+[*Jouer*](http://grillonbleu.github.io/jeuplusmoins/)
 
 Arithmépique est un jeu d'exercice destiné aux enfants de première année du primaire.
 On y pratique les additions et soustractions simples, sans dizaines ni retenues.
